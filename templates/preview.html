@@ -1,0 +1,100 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
+	<title>{% block title %} &middot; Flakes Admin Framework{% endblock %}</title>
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/preview.css">
+
+	<script src="{{ STATIC_URL }}/flakes/lib/jquery.min.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/lib/snap/snap.js"></script>
+
+	<script src="{{ STATIC_URL }}/flakes/lib/gridforms/gridforms.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/lib/gridforms/gridforms.css">
+
+	<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
+</head>
+
+<body class="{% block body-class %}{% endblock %}">
+	<!--[if lt IE 7]>
+		<p class="chromeframe" style="background:#eee; padding:10px; width:100%">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+	<![endif]-->
+
+	<div class="flakes-frame">
+
+		<div class="flakes-navigation">
+			<a href="index.html" class="logo">
+				<img src="{{ STATIC_URL }}/flakes/img/logo.png" width="120">
+			</a>
+
+			<ul>
+				<li><a href="index.html">About Flakes</a></li>
+			</ul>
+
+			<ul>
+				<li class="title">Example Layouts</li>
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="browsing-data.html">Browsing Data</a></li>
+				<li><a href="information-display.html">Displaying Information</a></li>
+				<li><a href="editing-information.html">Adding/Editing Data</a></li>
+			</ul>
+
+			<ul>
+				<li class="title">Component Library & Usage</li>
+				<li><a href="grid.html">Easy Grid</a></li>
+				<li><a href="forms.html">Simple Forms</a></li>
+				<li><a href="grid-forms.html">Grid Forms</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="read-only-information.html">Read Only Information</a></li>
+				<li><a href="messaging.html">Messaging</a></li>
+				<li><a href="buttons.html">Buttons</a></li>
+				<li><a href="tables.html">Tables</a></li>
+				<li><a href="search-and-filters.html">Search & Filters</a></li>
+			</ul>
+
+			<p class="foot">
+				Hello <b>Kumail Hunaid</b><br>
+				<a href="">Account</a> &bullet; <a href="">Logout</a>
+			</p>
+		</div>
+
+		<div class="flakes-content">
+
+			<div class="flakes-mobile-top-bar">
+				<a href="" class="logo-wrap">
+					<img src="{{ STATIC_URL }}/flakes/img/logo.png">
+				</a>
+
+				<a href="" class="navigation-expand-target">
+					<img src="{{ STATIC_URL }}/flakes/img/site-wide/navigation-expand-target.png">
+				</a>
+			</div>
+
+			<div class="view-wrap">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	console.log("{{ STATIC_URL }}");
+	console.log("{{ ROOT_URL }}");
+	console.log("{{ PAGE_URL }}");
+	</script>
+
+	<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/lib/prism-syntax-highlighter/prism.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/lib/prism-syntax-highlighter/prism.css">
+</body>
+</html>

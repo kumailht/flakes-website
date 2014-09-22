@@ -1,0 +1,219 @@
+{% extends "preview.html" %}
+
+{% block title %}Dashboard {{ block.super }}{% endblock %}
+
+{% block content %}
+
+	<h1>Inventory Search</h1>
+	<br>
+
+	<div class="search">
+		<input class="search-box" placeholder="Search Products" autofocus>
+	</div>
+	<div class="actions-bar" style="margin-bottom:0">
+		<a class="right green" href="example__add_product.php">Add a product</a>
+		<a href="" class="delete disabled">Delete</a><a href="example__edit_product.php" class="disabled">Edit</a>
+	</div>
+
+	<br>
+	<table class="dashboard-sample-table">
+		<colgroup>
+			<col span="1" style="width:20px" />
+			<col span="1" style="width:40%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td class="company">Product Name</td>
+				<td class="contact">SKU</td>
+				<td class="city">City</td>
+				<td class="name">Supplier</td>
+			</tr>
+		</thead>
+		<tbody class="list">
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Dolor Fusce</a></td>
+			  <td class="contact">654-1816</td>
+			  <td class="city">Eritrea</td>
+			  <td class="name">Daquan Parks</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Eu Sem Pellentesque</a></td>
+			  <td class="contact">937-5793</td>
+			  <td class="city">Macao</td>
+			  <td class="name">Mechelle Kirkland</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Maecenas</a></td>
+			  <td class="contact">682-9676</td>
+			  <td class="city">Bahamas</td>
+			  <td class="name">Warren Morales</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Augue Porttitor</a></td>
+			  <td class="contact">389-1087</td>
+			  <td class="city">Luxembourg</td>
+			  <td class="name">Steven Madden</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Dapibus</a></td>
+			  <td class="contact">893-7857</td>
+			  <td class="city">Fiji</td>
+			  <td class="name">Sierra Morton</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Eleifend</a></td>
+			  <td class="contact">1-783-967-8521</td>
+			  <td class="city">Martinique</td>
+			  <td class="name">Maia Ayers</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Tincidunt</a></td>
+			  <td class="contact">486-7965</td>
+			  <td class="city">Malawi</td>
+			  <td class="name">Ruth Lee</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Et</a></td>
+			  <td class="contact">462-2201</td>
+			  <td class="city">Malawi</td>
+			  <td class="name">Noel Langley</td>
+			</tr>
+			<!--  -->
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Dolor Fusce</a></td>
+			  <td class="contact">654-1816</td>
+			  <td class="city">Eritrea</td>
+			  <td class="name">Daquan Parks</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Eu Sem Pellentesque</a></td>
+			  <td class="contact">937-5793</td>
+			  <td class="city">Macao</td>
+			  <td class="name">Mechelle Kirkland</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Maecenas</a></td>
+			  <td class="contact">682-9676</td>
+			  <td class="city">Bahamas</td>
+			  <td class="name">Warren Morales</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Augue Porttitor</a></td>
+			  <td class="contact">389-1087</td>
+			  <td class="city">Luxembourg</td>
+			  <td class="name">Steven Madden</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Dapibus</a></td>
+			  <td class="contact">893-7857</td>
+			  <td class="city">Fiji</td>
+			  <td class="name">Sierra Morton</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Eleifend</a></td>
+			  <td class="contact">1-783-967-8521</td>
+			  <td class="city">Martinique</td>
+			  <td class="name">Maia Ayers</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Tincidunt</a></td>
+			  <td class="contact">486-7965</td>
+			  <td class="city">Malawi</td>
+			  <td class="name">Ruth Lee</td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox"></td>
+			  <td class="company"><a href="example__view_product.php">Et</a></td>
+			  <td class="contact">462-2201</td>
+			  <td class="city">Malawi</td>
+			  <td class="name">Noel Langley</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="pagination right">
+		<a href="">Prev</a> &nbsp; <input value="1"> <i>of</i> 3 &nbsp; <a href="">Next</a>
+	</div>
+
+	<script type="text/javascript">
+	$(function() {
+		var TableActions = {
+			el: {
+				table: $('#view table'),
+				buttons: $('.actions-bar .disabled'),
+				deleteButton: $('.actions-bar .delete')
+			},
+			init: function() {
+				this.events();
+			},
+			selectItem: function() {
+				var that = TableActions;
+
+				$(this).closest('tr').toggleClass('selected');
+
+				if (that.el.table.find('tr.selected').length) {
+					that.el.buttons.removeClass('disabled');
+				} else {
+					that.el.buttons.addClass('disabled');
+				}
+			},
+			toggleAll: function() {
+				var that = TableActions;
+				if (that.el.table.find('thead input[type=checkbox]').is(':checked')) {
+					that.el.table.find('input[type=checkbox]').attr('checked', 'checked');
+					that.el.table.find('tbody > tr').addClass('selected');
+				} else {
+					that.el.table.find('input[type=checkbox]').attr('checked', false);
+					that.el.table.find('tbody > tr').removeClass('selected');
+				}
+			},
+			deleteSelected: function() {
+				var that = TableActions;
+				var checked = that.el.table.find('tbody input[type=checkbox]').filter(':checked');
+
+				$(checked).each(function() {
+					$(this).closest('tr')
+						.fadeOut('fast', function() {
+							$(this).remove();
+						});
+				});
+
+				return false;
+			},
+			events: function() {
+				this.el.table.find('input[type=checkbox]').change(this.selectItem);
+				this.el.table.find('thead input[type=checkbox]').change(this.toggleAll);
+				this.el.deleteButton.click(this.deleteSelected);
+			}
+		}
+		TableActions.init();
+
+		if ($('#view').length) {
+			var options = {
+				valueNames: ["company", "contact", "city", "website", "name"]
+			};
+
+			try {
+				new List('view', options);
+			} catch(e) {}
+		}
+	});
+	</script>
+
+{% endblock %}

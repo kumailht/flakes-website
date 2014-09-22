@@ -1,0 +1,21 @@
+
+@import "../flakes/css/utils/general"
+
+.welcome-to-flakes-page
+
+	h1.massive
+		+size(50)
+		letter-spacing: -2px
+	h2.massive
+		+size(30)
+		letter-spacing: -1px
+		font-weight: normal
+
+
+.dashboard-sample-table
+	+breakpoints(0, 700px)
+		tr td
+			&:nth-child(4)
+				display: none
+			&:nth-child(5)
+				display: none

@@ -1,0 +1,100 @@
+{% extends "preview.html" %}
+
+{% block title %}Information Display {{ block.super }}{% endblock %}
+
+{% block content %}
+
+	<h1>LEICA M-SYSTEM</h1>
+
+	<p class="flakes-breadcrumbs">
+		<a href="">Inventory</a> / <a href="">Cameras</a> / <a href="">Leica</a> /
+	</p>
+
+	<br><br>
+
+	<div class="grid-10 gutter-20">
+		<div class="span-7">
+			<form class="grid-form">
+				<fieldset>
+					<legend>Product Details</legend>
+					<div data-row-span="2">
+						<div data-field-span="1">
+							<label>Product Name</label>
+							<input type="text">
+						</div>
+						<div data-field-span="1">
+							<label>Tags</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="2">
+						<div data-field-span="1">
+							<label>Vendor</label>
+							<input type="text">
+						</div>
+						<div data-field-span="1">
+							<label>Product Type</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>Product Description</label>
+							<textarea></textarea>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="span-3">
+			<form class="grid-form">
+				<fieldset>
+					<legend>Product Specs</legend>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>SKU</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>Initial Stock Level</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>Cost Price</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>Wholesale Price</label>
+							<input type="text">
+						</div>
+					</div>
+					<div data-row-span="1">
+						<div data-field-span="1">
+							<label>Retail Price</label>
+							<input type="text">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+<!-- 
+	<div class="grid-5 gutter-30">
+		<div class="span-3">
+			<img style="border:1px solid #eee" src="{{ STATIC_URL }}/img/preview/sample-product-leica.jpg" width="100%">
+		</div>
+		<div class="span-2">
+			<h2 style="margin-top:0">Description</h2>
+			<p><b>When you take a photograph with a camera from the Leica M-System, you experience a different kind of photography.</b></p>
+			<p>The quick and discreet rangefinder cameras are extremely quiet and very compact, allowing you to get closer the action. The Leica M features intuitive controls and is simple to use without superfluous functions or overcomplicated menus. All in all, the M-System grants photographers the opportunity to concentrate on what’s essential: the images.</p>
+		</div>
+	</div>
+ -->
+{% endblock %}

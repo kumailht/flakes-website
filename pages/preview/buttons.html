@@ -1,0 +1,75 @@
+{% extends "preview.html" %}
+
+{% block title %}Typography {{ block.super }}{% endblock %}
+
+{% block content %}
+	<h1>Buttons</h1>
+	<p>The quickest way to make buttons in Flakes is to use the <code>button</code> mixin. With just one simple line of SASS code, you can style a button in its entirety. Look at the mixin definition below to learn how it works.</p>
+	<pre class="language-sass"><code>=button($button-color: gray, $height: 36px, $padding-sides: 20px, $disabled: false)</code></pre>
+	<p>The button mixin accepts 4 optional parameters.</p>
+	<ol>
+		<li><b>button-color:</b> Accepts any one of the following: green, red, blue, orange, pink, gray, lightgray, darkblue, purple, magenta.</li>
+		<li><b>height:</b> The button's height in pixels</li>
+		<li><b>padding-sides:</b> Padding in pixels</li>
+		<li><b>disabled:</b> A boolean (true or false) value determines whether the button is inactive</li>
+	</ol>
+	<h4>Example buttons and the SASS code required to style them</h4>
+	<br>
+	<div class="buttons">
+		<div class="grid-4">
+			<div class="span-1">
+				<a class="button-1">Click me, maybe?</a>
+			</div>
+			<div class="span-3">
+				<pre class="language-sass"><code>+button(green, 50px, 40px)</code></pre>
+			</div>
+		</div>
+		<br>
+		<div class="grid-4">
+			<div class="span-1">
+				<a class="button-2">I am disabled</a>
+			</div>
+			<div class="span-3">
+				<pre class="language-sass"><code>+button(lightgray, 50px, 40px, true)</code></pre>
+			</div>
+		</div>
+		<br>
+		<div class="grid-4">
+			<div class="span-1">
+				<a class="button-3">Default</a>
+			</div>
+			<div class="span-3">
+				<pre class="language-sass"><code>+button</code></pre>
+			</div>
+		</div>
+		<br>
+		<a class="button-4">red</a>
+		<a class="button-5">blue</a>
+		<a class="button-6">orange</a>
+		<a class="button-7">pink</a>
+		<a class="button-8">darkblue</a>
+		<a class="button-9">purple</a>
+		<a class="button-10">magenta</a>
+		<a class="button-11">gray</a>
+		<a class="button-12">lightgray</a>
+		<a class="button-13">green</a>
+		<br>
+		<br>
+		<a class="button-13"><b>+</b></a>
+		<a class="button-13"><b>-</b></a>
+		<a class="button-13"><b>&times;</b></a>
+		<a class="button-13"><b>&uarr;</b></a>
+		<a class="button-13"><b>&darr;</b></a>
+		<a class="button-13"><b>&larr;</b></a>
+		<a class="button-13"><b>&rarr;</b></a>
+		<a class="button-13"><b>&raquo;</b></a>
+		<a class="button-13"><b>&laquo;</b></a>
+		<a class="button-13"><b>&#131;</b></a>
+		<a class="button-13"><b><small>&#x25B2;</small></b></a>
+		<a class="button-13"><b>&and;</b></a>
+		<a class="button-13"><b>&or;</b></a>
+		<a class="button-13"><b>&spades;</b></a>
+		<a class="button-13"><b>&clubs;</b></a>
+		<a class="button-13"><b>&hearts;</b></a>
+	</div>
+{% endblock %}

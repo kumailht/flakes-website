@@ -1,0 +1,85 @@
+{% extends "preview.html" %}
+
+{% block title %}Information Display {{ block.super }}{% endblock %}
+
+{% block content %}
+
+	<h1>LEICA M-SYSTEM</h1>
+
+	<p class="flakes-breadcrumbs">
+		<a href="">Inventory</a> / <a href="">Cameras</a> / <a href="">Leica</a> /
+	</p>
+
+	<br><br>
+
+	<div class="grid-10 gutter-20">
+		<div class="span-7">
+			<fieldset class="flakes-information-box">
+				<legend>Product Details</legend>
+
+				<div class="grid-4">
+					<dl class="span-2">
+						<dt>Product Name</dt>
+						<dd>LEICA M-SYSTEM</dd>
+					</dl>
+					<dl class="span-2">
+						<dt>Tags</dt>
+						<dd>DSLR Cameras,</dd>
+					</dl>
+				</div>
+				<div class="grid-4">
+					<dl class="span-2">
+						<dt>Vendor</dt>
+						<dd>Leica Systems</dd>
+					</dl>
+					<dl class="span-2">
+						<dt>Product Type</dt>
+						<dd>Lifting</dd>
+					</dl>
+				</div>
+				<dl>
+					<dt>Product Description</dt>
+					<dd>A pallet jack, also known as a pallet truck, pallet pump, pump truck, or jigger is a tool used to lift and move pallets.
+		The front wheels are mounted inside the end of the forks, and as the hydraulic jack is raised, the forks are separated vertically from the front wheels, forcing the load upward until it clears the floor. The pallet is only lifted enough to clear the floor for subsequent travel.</dd>
+				</dl>
+			</fieldset>
+		</div>
+		<div class="span-3">
+			<fieldset class="flakes-information-box">
+				<legend>Product Specs</legend>
+				<dl>
+					<dt>SKU</dt>
+					<dd>23-43-4343-13</dd>
+				</dl>
+				<dl>
+					<dt>Initial Stock Level</dt>
+					<dd>$314</dd>
+				</dl>
+				<dl>
+					<dt>Cost Price</dt>
+					<dd>$1200</dd>
+				</dl>
+				<dl>
+					<dt>Wholesale Price</dt>
+					<dd>$1400</dd>
+				</dl>
+				<dl>
+					<dt>Retail Price</dt>
+					<dd>$1995</dd>
+				</dl>
+			</fieldset>
+		</div>
+	</div>
+<!-- 
+	<div class="grid-5 gutter-30">
+		<div class="span-3">
+			<img style="border:1px solid #eee" src="{{ STATIC_URL }}/img/preview/sample-product-leica.jpg" width="100%">
+		</div>
+		<div class="span-2">
+			<h2 style="margin-top:0">Description</h2>
+			<p><b>When you take a photograph with a camera from the Leica M-System, you experience a different kind of photography.</b></p>
+			<p>The quick and discreet rangefinder cameras are extremely quiet and very compact, allowing you to get closer the action. The Leica M features intuitive controls and is simple to use without superfluous functions or overcomplicated menus. All in all, the M-System grants photographers the opportunity to concentrate on what’s essential: the images.</p>
+		</div>
+	</div>
+ -->
+{% endblock %}

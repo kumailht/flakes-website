@@ -1,0 +1,113 @@
+{% extends "preview.html" %}
+
+{% block title %}Simple Forms {{ block.super }}{% endblock %}
+
+{% block content %}
+	<h1>Simple Forms</h1>
+
+	<p><big>The form framework uses three simple libraries to do some fairly powerful stuff with very little effort.</big></p>
+
+	<div class="grid-2 gutter-20">
+		<div class="span-1">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<form>
+					<ul>
+						<li>
+							<label>First Name</label>
+							<input type="text" placeholder="Your first name here">
+						</li>
+						<li>
+							<label>Last Name</label>
+							<input type="text">
+						</li>
+						<li>
+							<label>Email Address</label>
+							<input type="email" required>
+						</li>
+						<li>
+							<label>Address</label>
+							<textarea></textarea>
+						</li>
+						<li>
+							<input type="submit">
+						</li>
+					</ul>
+				</form>
+			</fieldset>
+		</div>
+
+		<div class="span-1">
+			<fieldset>
+				<legend>Company Information</legend>
+				<form>
+					<ul>
+						<li>
+							<label>Company Name</label>
+							<input type="text">
+						</li>
+						<li>
+							<label>Phone</label>
+							<input type="text">
+						</li>
+						<li>
+							<label>Newsletter</label>
+							<label><input type="checkbox"> Subscribe to the events newsletter</label>
+						</li>
+						<li>
+							<label>Business Type</label>
+							<label><input type="checkbox"> Sole Proprietor</label> &nbsp;&nbsp;&nbsp;
+							<label><input type="checkbox"> Partnership</label> &nbsp;&nbsp;&nbsp;
+							<label><input type="checkbox"> Corporation</label>
+						</li>
+						<li>
+							<label>Business Type</label>
+							<label><input name="radio-group-1[]" type="radio" checked> Sole Proprietor</label> &nbsp;&nbsp;&nbsp;
+							<label><input name="radio-group-1[]" type="radio"> Partnership</label> &nbsp;&nbsp;&nbsp;
+							<label><input name="radio-group-1[]" type="radio"> Corporation</label>
+						</li>
+						<li>
+							<label>Business Type</label>
+							<ul>
+								<li><label><input name="radio-group-2[]" type="radio" checked> Sole Proprietor</label></li>
+								<li><label><input name="radio-group-2[]" type="radio"> Partnership</label></li>
+								<li><label><input name="radio-group-2[]" type="radio"> Corporation</label></li>
+							</ul>
+						</li>
+						<li>
+							<label>Country</label>
+							<select id="countries" name="countries">
+								<option>Select your country</option>
+								<option value="ax">Åland Islands</option>
+								<option value="al">Albania</option>
+								<option value="dz">Algeria</option>
+								<option value="as">American Samoa</option>
+								<option value="ad">Andorra</option>
+								<option value="ao">Angola</option>
+								<option value="ai">Anguilla</option>
+								<option value="aq">Antarctica</option>
+								<option value="ag">Antigua and Barbuda</option>
+								<option value="ar">Argentina</option>
+								<option value="am">Armenia</option>
+								<option value="aw">Aruba</option>
+								<option value="au">Australia</option>
+								<option value="at">Austria</option>
+								<option value="az">Azerbaijan</option>
+								<option value="bs">Bahamas</option>
+								<option value="bh">Bahrain</option>
+								<option value="bd">Bangladesh</option>
+								<option value="bb">Barbados</option>
+								<option value="by">Belarus</option>
+								<option value="be">Belgium</option>
+							</select>
+						</li>
+						<li>
+							<label>Address</label>
+							<textarea></textarea>
+						</li>
+					</ul>
+				</form>
+			</fieldset>
+		</div>
+	</div>
+{% endblock %}

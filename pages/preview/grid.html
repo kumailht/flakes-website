@@ -1,0 +1,188 @@
+{% extends "preview.html" %}
+
+{% block title %}Simple Grid {{ block.super }}{% endblock %}
+
+{% block content %}
+	<h1>Easy Grid</h1>
+	<b><big><p>Simple grid is a collection of classes that you can use to build extremely flexible grid layouts. These grids are responsive and simple to implement.</p></big></b>
+
+	<h3>Usage</h3>
+	<p>Below is a simple 6 column grid and the markup used to create it. Elements inside the grid can span from 1 to 6 columns. Combined, they should not span more than the maximum number of columns. Our grid of 6 columns has 4 child elements spanning a total of 6 columns.</p>
+	<div class="grid-6">
+		<div class="span-1" style="background:#bbb; padding:20px"><mark>.span-1</mark></div>
+		<div class="span-3" style="background:#ddd; padding:20px"><mark>.span-3</mark></div>
+		<div class="span-1" style="background:#bbb; padding:20px"><mark>.span-1</mark></div>
+		<div class="span-1" style="background:#ddd; padding:20px"><mark>.span-1</mark></div>
+	</div>
+
+<pre><code class="language-markup">&lt;div class=&quot;grid-6 gutter-20&quot;&gt;
+	&lt;div class=&quot;span-1&quot;&gt;.span-1&lt;/div&gt;
+	&lt;div class=&quot;span-3&quot;&gt;.span-3&lt;/div&gt;
+	&lt;div class=&quot;span-1&quot;&gt;.span-1&lt;/div&gt;
+	&lt;div class=&quot;span-1&quot;&gt;.span-1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	<p>Use <code class="language-markup">.gutter-n</code> classes to space out your spans. All grids below have a <code class="language-markup">.gutter-20</code> class to give a 20px gutter. Gutters can be 10, 20, 40, 60 or 80 pixels wide.</p>
+
+	<h2>Examples Grids</h2>
+	<style type="text/css">
+		/*.test p {display:block;}*/
+		.test p span, .test div span
+		{background-color:#eee; font: 18px monospace; color:#aaa; display:block; text-align:center; padding:10px 0;}
+		.test p span span, .test div span span {background:#ddd;}
+	</style>
+	<div class="test grid-1 gutter-20">
+		<p class="span-1"><span>1 (100%)</span></p>
+	</div>
+	<div class="test grid-2 gutter-20">
+		<p class="span-1"><span>1 (50%)</span></p>
+		<p class="span-1"><span>2 (50%)</span></p>
+	</div>
+	<div class="test grid-3 gutter-20">
+		<p class="span-1"><span>1 (33.33%)</span></p>
+		<p class="span-1"><span>2 (33.33%)</span></p>
+		<p class="span-1"><span>3 (33.33%)</span></p>
+	</div>
+	<div class="test grid-4 gutter-20">
+		<p class="span-1"><span>1 (25%)</span></p>
+		<p class="span-1"><span>2 (25%)</span></p>
+		<p class="span-1"><span>3 (25%)</span></p>
+		<p class="span-1"><span>4 (25%)</span></p>
+	</div>
+	<div class="test grid-5 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+	</div>
+	<div class="test grid-6 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+	</div>
+	<div class="test grid-7 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+	</div>
+	<div class="test grid-8 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+		<p class="span-1"><span>8</span></p>
+	</div>
+	<div class="test grid-9 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+		<p class="span-1"><span>8</span></p>
+		<p class="span-1"><span>9</span></p>
+	</div>
+	<div class="test grid-10 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+		<p class="span-1"><span>8</span></p>
+		<p class="span-1"><span>9</span></p>
+		<p class="span-1"><span>10</span></p>
+	</div>
+	<div class="test grid-11 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+		<p class="span-1"><span>8</span></p>
+		<p class="span-1"><span>9</span></p>
+		<p class="span-1"><span>10</span></p>
+		<p class="span-1"><span>11</span></p>
+	</div>
+	<div class="test grid-12 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-1"><span>4</span></p>
+		<p class="span-1"><span>5</span></p>
+		<p class="span-1"><span>6</span></p>
+		<p class="span-1"><span>7</span></p>
+		<p class="span-1"><span>8</span></p>
+		<p class="span-1"><span>9</span></p>
+		<p class="span-1"><span>10</span></p>
+		<p class="span-1"><span>11</span></p>
+		<p class="span-1"><span>12</span></p>
+	</div>
+
+	<h2>Span multiple columns</h2>
+	<div class="test grid-6 gutter-20">
+		<p class="span-1"><span>1</span></p>
+		<p class="span-1"><span>2</span></p>
+		<p class="span-1"><span>3</span></p>
+		<p class="span-3"><span>4</span></p>
+	</div>
+	<div class="test grid-12 gutter-20">
+		<p class="span-3"><span>1</span></p>
+		<p class="span-3"><span>2</span></p>
+		<p class="span-3"><span>3</span></p>
+		<p class="span-3"><span>4</span></p>
+	</div>
+	<h2>Nesting Grids</h2>
+	<div class="test grid-6 gutter-20">
+		<div class="span-1"><span>1</span></div>
+		<div class="span-1"><span>2</span></div>
+		<div class="span-4"><span>
+			<div class="test grid-6 gutter-20">
+				<p class="span-1"><span>1</span></p>
+				<p class="span-1"><span>2</span></p>
+				<p class="span-1"><span>3</span></p>
+				<p class="span-1"><span>4</span></p>
+				<p class="span-1"><span>5</span></p>
+				<p class="span-1"><span>6</span></p>
+			</div>
+		</span></div>
+	</div>
+	<br>
+	<div class="test grid-6 gutter-20">
+		<div class="span-3"><span>
+			<div class="test grid-6 gutter-20">
+				<p class="span-1"><span>1</span></p>
+				<p class="span-1"><span>2</span></p>
+				<p class="span-1"><span>3</span></p>
+				<p class="span-1"><span>4</span></p>
+				<p class="span-1"><span>5</span></p>
+				<p class="span-1"><span>6</span></p>
+			</div>
+		</span></div>
+		<div class="span-3"><span>
+			<div class="test grid-6 gutter-20">
+				<p class="span-1"><span>1</span></p>
+				<p class="span-1"><span>2</span></p>
+				<p class="span-1"><span>3</span></p>
+				<p class="span-1"><span>4</span></p>
+				<p class="span-1"><span>5</span></p>
+				<p class="span-1"><span>6</span></p>
+			</div>
+		</span></div>
+	</div>
+{% endblock %}
