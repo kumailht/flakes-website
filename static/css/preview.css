@@ -1,12 +1,17 @@
 .welcome-to-flakes-page h1.massive {
-  font-size: 50px;
-  font-size: 3.125rem;
-  letter-spacing: -2px; }
+  font-size: 44px;
+  font-size: 2.75rem;
+  letter-spacing: -2px;
+  margin: 0 0 0;
+  position: relative;
+  left: -3px;
+  margin-top: 12px; }
 .welcome-to-flakes-page h2.massive {
-  font-size: 30px;
-  font-size: 1.875rem;
-  letter-spacing: -1px;
-  font-weight: normal; }
+  font-size: 21px;
+  font-size: 1.3125rem;
+  font-weight: normal;
+  max-width: 670px;
+  margin-top: 0; }
 
 @media only screen and (min-width: 0) and (max-width: 700px) {
   .dashboard-sample-table tr td:nth-child(4) {

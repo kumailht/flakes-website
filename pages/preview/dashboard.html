@@ -4,12 +4,9 @@
 
 {% block content %}
 
+
 	<h1>Dashboard</h1>
 
-	<script type="text/javascript" src="http://kumailht.com/responsive-elements.js"></script>
-
-
-	<div id="line-example"></div>
 	<div class="flakes-key-metrics" data-respond>
 		<div title="A unit of account is a standard monetary unit of measurement of value/cost of goods, services, or assets. It is one of three well-known functions of money.[1] It lends meaning to profits, losses, liability, or assets.">
 			<span>2,382</span><br>
@@ -36,66 +33,57 @@
 			Refunds
 		</div>
 	</div>
-<!-- 
-	<div class="legend">
+
+	<div class="legend" style="margin-top:30px;">
 		<p>
-			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:rgba(151,187,205,1)"></span>
-			&nbsp; <b>Net profit</b> 
+			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:#0B62A4"></span>
+			&nbsp; <b>Revenue</b> 
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:rgba(151,187,205,0.5)"></span>
-			&nbsp; <b>Unit Sales</b>
+			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:#7A92A3"></span>
+			&nbsp; <b>Units Sold</b>
 		</p>
 	</div>
- -->
+
+	<div id="line-example"></div>
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 	<script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
 	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.5.1.css">
+
 	<script type="text/javascript">
-/*
-* Play with this code and it'll update in the panel opposite.
-*
-* Why not try some of the options above?
-*/
+		var rand = function(min, max) { return Math.floor(Math.random() * (max - min)) + min };
+		var i = 0;
+		var sample_data = [];
+		while (i < 100) {
+			var d = new Date();
+			d.setDate(d.getDate() - (100 - i));
 
-	var rand = function(min, max) { return Math.floor(Math.random() * (max - min)) + min };
-	var i = 0;
-	var sample_data = [];
-	while (i < 100) {
-		var d = new Date();
-		d.setDate(d.getDate() - (100 - i));
-
-		sample_data.push({
-			y: d.getTime(),
-			a: rand(3000, 3600) + i * rand(20, 30),
-			b: rand(1500, 2000) + i * rand(30, 40)
-		});
-		console.log(i)
-		i++;
-	}
-	console.log(sample_data)
-	Morris.Line({
-		element: 'line-example',
-		data: sample_data,
-		xkey: 'y',
-		ykeys: ['a', 'b'],
-		labels: ['Revenue', 'Units Sold'],
-		smooth: false,
-		ymin: 1000,
-		xLabels: 'month',
-		xLabelFormat: function (d) {
-			var curr_date = d.getDate();
-			var curr_month = d.getMonth();
-			var curr_year = d.getFullYear();
-			var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-
-			return monthNames[curr_month] + ' ' + curr_year;
+			sample_data.push({
+				y: d.getTime(),
+				a: rand(3000, 3600) + i * rand(20, 30),
+				b: rand(1500, 2000) + i * rand(30, 40)
+			});
+			i++;
 		}
-	});
-	</script>
 
-	<div class="grid-5">
-		<div class="span-4">
-		</div>
-	</div>
+		Morris.Line({
+			element: 'line-example',
+			data: sample_data,
+			xkey: 'y',
+			ykeys: ['a', 'b'],
+			labels: ['Revenue', 'Units Sold'],
+			smooth: false,
+			ymin: 1000,
+			xLabels: 'month',
+			resize: true,
+			xLabelFormat: function (d) {
+				var curr_date = d.getDate();
+				var curr_month = d.getMonth();
+				var curr_year = d.getFullYear();
+				var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+				return monthNames[curr_month] + ' ' + curr_year;
+			}
+		});
+	</script>
 {% endblock %}

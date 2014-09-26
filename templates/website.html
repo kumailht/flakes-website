@@ -1,0 +1,32 @@
+<!doctype html>
+
+<!--
+
+PS: This landing page is badly/quickly coded to save time! The library is not.
+Don't judge a book by its cover. Or something like that.
+
+-->
+
+<html>
+<head>
+	<title>Flakes &bullet; {% block title %}{% endblock %}</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">	
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico"> 
+	<link rel="stylesheet" href="{{ STATIC_URL }}/css/website.css">
+
+	<script src="//use.typekit.net/dvn5wwo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+	{% block content %}{% endblock %}
+
+	{% block scripts %}
+		<script src="{{ STATIC_URL }}/flakes/js/lib/jquery.min.js"></script>
+	{% endblock %}
+</body>
+</html>
