@@ -1,16 +1,3 @@
-$(function() {
-	var file_name = document.location.pathname.match(/[^\/]+$/)[0];
-	var current_navigation = $('.flakes-navigation ul li a[href="' + file_name + '"]');
-
-	current_navigation.parent().addClass('active');
-
-	var nav_items = $('.flakes-navigation ul li a');
-	nav_items.each(function() {
-		var text = $(this).text();
-		$(this).attr('title', text);
-	});
-});
-
 
 var FlakesNavigation = {
 	init: function() {
@@ -44,6 +31,22 @@ var FlakesNavigation = {
 jQuery(function() {
 	FlakesNavigation.init();
 })
+
+$(function() {
+	// Sometimes 'html' does not exist in the path
+	var file_name = document.location.pathname.match(/[^\/]+$/)[0];
+	var current_navigation = $('.flakes-navigation ul li a[href="' + file_name + '"]');
+
+	current_navigation.parent().addClass('active');
+
+	var nav_items = $('.flakes-navigation ul li a');
+	nav_items.each(function() {
+		var text = $(this).text();
+		$(this).attr('title', text);
+	});
+});
+
+
 
 $(function() {
 	if (globals.ie === undefined || (globals.ie && globals.ie >= 10)) {

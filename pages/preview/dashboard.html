@@ -3,8 +3,6 @@
 {% block title %}Dashboard {{ block.super }}{% endblock %}
 
 {% block content %}
-
-
 	<h1>Dashboard</h1>
 
 	<div class="flakes-key-metrics" data-respond>
@@ -34,21 +32,23 @@
 		</div>
 	</div>
 
-	<div class="legend" style="margin-top:30px;">
+	<div class="legend">
 		<p>
-			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:#0B62A4"></span>
-			&nbsp; <b>Revenue</b> 
+			<span class="first"></span> <b>Revenue</b> 
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<span style="width:10px; height:10px; display:inline-block; border-radius:20px; background:#7A92A3"></span>
-			&nbsp; <b>Units Sold</b>
+			<span class="last"></span> <b>Units Sold</b>
 		</p>
 	</div>
 
-	<div id="line-example"></div>
+	<div id="example-graph"></div>
+{% endblock %}
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
-	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.5.1.css">
+{% block scripts %}
+	{{ block.super }}
+
+	<script src="{{ STATIC_URL }}/bower_components/raphael/raphael.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/morrisjs/morris.js"></script>
+	<link rel="stylesheet" href="{{ STATIC_URL }}/bower_components/morrisjs/morris.css">
 
 	<script type="text/javascript">
 		var rand = function(min, max) { return Math.floor(Math.random() * (max - min)) + min };
@@ -67,7 +67,7 @@
 		}
 
 		Morris.Line({
-			element: 'line-example',
+			element: 'example-graph',
 			data: sample_data,
 			xkey: 'y',
 			ykeys: ['a', 'b'],

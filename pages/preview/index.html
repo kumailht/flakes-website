@@ -1,15 +1,10 @@
 {% extends "preview.html" %}
 
-{% block body-class %}welcome-to-flakes-page{% endblock %}
-
 {% block title %}Welcome {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1 class="massive">Welcome to Flakes</h1>
-	<h2 class="massive"><b>Flakes is an Admin Template Framework.</b><br>
-A combination of CSS Libraries, JavaScript Libraries and Design files
-that help you build business tools very quickly.</h2>
-
+	<h1 class="welcome-title title">Welcome to Flakes</h1>
+	<h2 class="welcome-subtitle">Flakes is a foundational front-end framework to build admin applications on. It is unassuming yet opinionated.</h2>
 
 	<div class="grid-3 gutter-40">
 		<div class="span-1">
@@ -17,43 +12,23 @@ that help you build business tools very quickly.</h2>
 		</div>
 	</div>
 
-
-	<div class="grid-3 gutter-40">
-		<div class="span-1">
-			<p>In an attempt to build the finest — most functional Admin Template Framework, I started looking at existing implementations. I studied the admin websites that companies built for their internal use and backend applications on the market.</p>
-			<p>In an attempt to build the finest — most functional Admin Template Framework, I started looking at existing implementations. I studied the admin websites that companies built for their internal use and backend applications on the market.</p>
-		</div>
-		<div class="span-1">
-			<p>In an attempt to build the finest — most functional Admin Template Framework, I started looking at existing implementations. I studied the admin websites that companies built for their internal use and backend applications on the market.</p>
-			<p>I studied the admin websites that companies built for their internal use and backend applications on the market.</p>
-		</div>
-		<div class="span-1">
-			<img src="{{ STATIC_URL }}/img/preview/flakes-early-sketch.png">
-		</div>
-	</div>
-
-
-
-
-
-	<div class="grid-5">
-		<div class="span-4">
-			<big><p>Flakes is a foundational front-end framework to build admin applications on. It is unassuming and opinionated.</p></big>
-
+	<div class="grid-8 gutter-30">
+		<div class="span-3">
 			<h4>Flakes is boring</h4>
-			<p>It is built on top of layers of abstractions and loosely coupled code to make building applications simpler. It uses a template inheritance library to avoid code duplication. It avoids using vain effects, styles or images that do not contribute to the function of the application`. The framework does not assume to know how it will be used. That complicated mumbo jumbo just to say flakes takes care of all the boring stuff so you can launch your project faster.</p>
-
-			<h4>Real world scenarios</h4>
-			<p>When designing flakes, I took the time to study plenty of real world admin and even non-admin applications. CRM software, Inventory Management, Website Admin, Transaction Management, etc. I wanted Flakes to be agnostic enough that any one of those applications could be built with it.</p>
-
-			<h4>Flakes doesn't use images, gradients or effects</h4>
-			<p>Look around, there are only a handful of images in use. Gradients are non-existent and so are transition effects. This provides an experience that is quick and simple. A nice side effect is that it makes things easy for the developer which is never a bad thing.</p>
+			<p>It is built on top of layers of abstractions and loosely coupled code to make building application front-ends simpler. It avoids using vain effects, styles or images that do not contribute to the function of the application. The framework does not assume to know how it will be used. That complicated mumbo jumbo just to say flakes takes care of all the boring stuff so you can launch your project faster.</p>
 
 			<h4>Flakes uses system fonts</h4>
-			<p>I wasn't kidding when I mentioned earlier that flakes is opinionated, or quick. Instead of using webfonts, flakes uses system fonts. Webfonts by definition are slower than system fonts. They need to be downloaded over a network or fetched from a local cache. They also either hold back the rendering of a page or cause a flash of content being updated. Both of which are unacceptable when you need to get work done. <a href="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/">Further reading on web font's performance</a></p>
+			<p>Instead of using webfonts, flakes uses system fonts. Webfonts by definition are slower than system fonts. They need to be downloaded over a network or fetched from a local cache. They also either hold back the rendering of a page or cause a flash of content being updated. Both of which are unacceptable when you need to get work done.</p>
+		</div>
+		<div class="span-3">
+			<h4>Built for the real world</h4>
+			<p>When designing flakes, I took the time to study plenty of real world admin and even non-admin applications. CRM software, Inventory Management, Website Admin, Transaction Management, etc. I wanted Flakes to be agnostic enough that any one of those applications could be built with it.</p>
 
-			<h4>Modals are banished</h4>
-			<p>Modal windows are a bad solution to any problem. They interrupt user workflow and often provide a jarring experience. When you think you need a modal, rethink the problem. Chances are there is a better solution.</p>
+			<h4>Flakes doesn't use images,<br> gradients or effects</h4>
+			<p>Look around, there are only a handful of images in use. Gradients are non-existent and so are transition effects. This provides an experience that is quick and simple. A nice side effect is that it makes things easy for the developer which is never a bad thing.</p>
+		</div>
+		<div class="span-2">
+			<img src="{{ STATIC_URL }}/img/preview/flakes-early-sketch.png" width="100%">
 		</div>
 	</div>
 {% endblock %}

@@ -5861,6 +5861,7 @@ a {
 .about-flakes h1, .design-and-research h1 {
   font-size: 45px;
   letter-spacing: -2px;
+  word-spacing: -2px;
   margin-top: 70px;
   margin-bottom: 0; }
 

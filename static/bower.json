@@ -1,0 +1,12 @@
+{
+  "name": "Flakes Website",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "morrisjs": "~0.5.1",
+    "prism": "git@github.com:LeaVerou/prism.git#gh-pages",
+    "snapjs": "~1.9.3",
+    "responsive-elements": "~1.0.0",
+    "gridforms": "~1.0.2"
+  }
+}

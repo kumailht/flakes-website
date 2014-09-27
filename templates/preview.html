@@ -15,16 +15,6 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/css/all.css">
 	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/preview.css">
-
-	<script src="{{ STATIC_URL }}/flakes/lib/jquery.min.js"></script>
-	<script src="{{ STATIC_URL }}/flakes/lib/snap/snap.js"></script>
-
-	<script type="text/javascript" src="http://kumailht.com/responsive-elements.js"></script>
-	<script src="{{ STATIC_URL }}/flakes/lib/gridforms/gridforms.js"></script>
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/lib/gridforms/gridforms.css">
-
-	<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
-	<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
 </head>
 
 <body class="{% block body-class %}{% endblock %}">
@@ -88,14 +78,24 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-	console.log("{{ STATIC_URL }}");
-	console.log("{{ ROOT_URL }}");
-	console.log("{{ PAGE_URL }}");
-	</script>
+	{% block scripts %}
+		<script src="{{ STATIC_URL }}/bower_components/jquery/dist/jquery.js"></script>
+		<script src="{{ STATIC_URL }}/bower_components/snapjs/snap.js"></script>
 
-	<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
-	<script src="{{ STATIC_URL }}/flakes/lib/prism-syntax-highlighter/prism.js"></script>
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/lib/prism-syntax-highlighter/prism.css">
+		<script type="text/javascript" src="{{ STATIC_URL }}/bower_components/responsive-elements/responsive-elements.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.css">
+		<script src="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.js"></script>
+
+		<!-- flakes -->
+		<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
+		<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
+
+		<!-- Preview only -->
+		<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
+
+		<script src="{{ STATIC_URL }}/bower_components/prism/prism.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/prism/themes/prism.css">
+	{% endblock %}
 </body>
 </html>

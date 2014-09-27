@@ -1,20 +1,35 @@
 
 @import "../flakes/css/utils/general"
 
-.welcome-to-flakes-page
-	h1.massive
-		+size(44)
-		letter-spacing: -2px
-		margin: 0 0 0
-		position: relative
-		left: -3px
-		margin-top: 12px
-	h2.massive
-		+size(21)
-		font-weight: normal
-		max-width: 670px
-		margin-top: 0
+// All pages
+.view-wrap > .title:first-child
+	margin: 0 0 0
+	margin-top: 12px
 
+// Welcome page
+h1.welcome-title
+	position: relative
+	left: -3px
+
+h2.welcome-subtitle
+	+size(21)
+	font-weight: normal
+	max-width: 540px
+	margin-top: 0
+
+// Dashboard
+.legend
+	margin-top: 40px
+	span
+		width: 10px
+		height: 10px
+		display: inline-block
+		border-radius: 20px
+		margin-right: 4px
+	span.first
+		background: #0B62A4
+	span.last
+		background: #7A92A3
 
 .dashboard-sample-table
 	+breakpoints(0, 700px)

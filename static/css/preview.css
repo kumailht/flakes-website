@@ -1,17 +1,30 @@
-.welcome-to-flakes-page h1.massive {
-  font-size: 44px;
-  font-size: 2.75rem;
-  letter-spacing: -2px;
+.view-wrap > .title:first-child {
   margin: 0 0 0;
-  position: relative;
-  left: -3px;
   margin-top: 12px; }
-.welcome-to-flakes-page h2.massive {
+
+h1.welcome-title {
+  position: relative;
+  left: -3px; }
+
+h2.welcome-subtitle {
   font-size: 21px;
   font-size: 1.3125rem;
   font-weight: normal;
-  max-width: 670px;
+  max-width: 540px;
   margin-top: 0; }
+
+.legend {
+  margin-top: 40px; }
+  .legend span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 4px; }
+  .legend span.first {
+    background: #0b62a4; }
+  .legend span.last {
+    background: #7a92a3; }
 
 @media only screen and (min-width: 0) and (max-width: 700px) {
   .dashboard-sample-table tr td:nth-child(4) {
