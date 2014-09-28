@@ -4,10 +4,159 @@
 
 {% block content %}
 	<h1>Buttons</h1>
+	<h3>These buttons look and feel like buttons. When you press them, you'll get some feedback. They have shadows and gradients. Crazy.</h3>
 
-	<p>The quickest way to make buttons in Flakes is to use the <code>button</code> mixin. With just one simple line of SASS code, you can style a button in its entirety. Look at the mixin definition below to learn how it works.</p>
+	<h3>Examples</h3>
 
-	<pre class="language-sass"><code>=button($button-color: gray, $height: 36px, $padding-sides: 20px, $disabled: false)</code></pre>
+	<h4>They come in colors!</h4>
+	<p>
+		<a style="margin-right:10px" class="button-lightgray">gray</a>
+		<a style="margin-right:10px" class="button-gray">gray</a>
+		<a style="margin-right:10px" class="button-blue">blue</a>
+		<a style="margin-right:10px" class="button-orange">orange</a>
+		<a style="margin-right:10px" class="button-pink">pink</a>
+	</p>
+	<p>
+		<a style="margin-right:10px" class="button-darkblue">darkblue</a>
+		<a style="margin-right:10px" class="button-purple">purple</a>
+		<a style="margin-right:10px" class="button-magenta">magenta</a>
+		<a style="margin-right:10px" class="button-green">green</a>
+	</p>
+
+	<h4>And sizes!</h4>
+	<p>
+		<a style="margin-right:10px" class="button-green massive">green</a>
+		<a style="margin-right:10px" class="button-green bigger">green</a>
+		<a style="margin-right:10px" class="button-green">green</a>
+		<a style="margin-right:10px" class="button-green smaller">green</a>
+		<a style="margin-right:10px" class="button-green tiny">green</a>
+	</p>
+
+	<h4>And you can use them with gylphs</h4>
+	<p>
+		<a class="button-darkblue"><b>+</b></a>
+		<a class="button-darkblue"><b>-</b></a>
+		<a class="button-darkblue"><b>&times;</b></a>
+		<a class="button-darkblue"><b>&uarr;</b></a>
+		<a class="button-darkblue"><b>&darr;</b></a>
+		<a class="button-darkblue"><b>&larr;</b></a>
+		<a class="button-darkblue"><b>&rarr;</b></a>
+		<a class="button-darkblue"><b>&raquo;</b></a>
+		<a class="button-darkblue"><b>&laquo;</b></a>
+		<a class="button-darkblue"><b>&and;</b></a>
+		<a class="button-darkblue"><b>&or;</b></a>
+	</p>
+
+	<br>
+
+	<h3>Attribution</h3>
+	<p>These buttons were designed by <a href="http://365psd.com/day/3-357/">Julius Csurgo</a> and developed by <a href="http://www.cssflow.com/snippets/download-buttons">CSS Flow</a>. Modified for use in Flakes.</p>
+
+	<h3>Usage</h3>
+	<p>For basic usage, all you need is the <code>button-color</code> class and <code>size</code> modifier.</p>
+
+	<pre class="language-markup"><code>&lt;a class=&quot;button-purple&quot;&gt;Purple Button&lt;/a&gt;</code></pre>
+	<pre class="language-markup"><code>&lt;a class=&quot;button-purple bigger&quot;&gt;Bigger Purple Button&lt;/a&gt;</code></pre>
+	<br>
+
+	<h3>Pre-defined button classes</h3>
+	<table class="flakes-table">
+		<colgroup>
+			<col span="1" style="width:30%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<td>Class Name</td>
+				<td>Button Preview</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>button-lightgray</code></td>
+				<td><a class="button-lightgray smaller">lightgray</a></td>
+			</tr>
+			<tr>
+				<td><code>button-gray</code></td>
+				<td><a class="button-gray smaller">gray</a></td>
+			</tr>
+			<tr>
+				<td><code>button-blue</code></td>
+				<td><a class="button-blue smaller">blue</a></td>
+			</tr>
+			<tr>
+				<td><code>button-orange</code></td>
+				<td><a class="button-orange smaller">orange</a></td>
+			</tr>
+			<tr>
+				<td><code>button-pink</code></td>
+				<td><a class="button-pink smaller">pink</a></td>
+			</tr>
+			<tr>
+				<td><code>button-darkblue</code></td>
+				<td><a class="button-darkblue smaller">darkblue</a></td>
+			</tr>
+			<tr>
+				<td><code>button-purple</code></td>
+				<td><a class="button-purple smaller">purple</a></td>
+			</tr>
+			<tr>
+				<td><code>button-magenta</code></td>
+				<td><a class="button-magenta smaller">magenta</a></td>
+			</tr>
+			<tr>
+				<td><code>button-green</code></td>
+				<td><a class="button-green smaller">green</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<h3>Pre-defined button sizes</h3>
+	<table class="flakes-table">
+		<colgroup>
+			<col span="1" style="width:30%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<td>Class Name</td>
+				<td>Button Preview</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>massive</code></td>
+				<td><a class="button-gray massive">massive</a></td>
+			</tr>
+			<tr>
+				<td><code>bigger</code></td>
+				<td><a class="button-gray bigger">bigger</a></td>
+			</tr>
+			<tr>
+				<td>(no class required)</td>
+				<td><a class="button-gray">Regular</a></td>
+			</tr>
+			<tr>
+				<td><code>smaller</code></td>
+				<td><a class="button-gray smaller">smaller</a></td>
+			</tr>
+			<tr>
+				<td><code>tiny</code></td>
+				<td><a class="button-gray tiny">tiny</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+
+	<h3>Advanced Usage</h3>
+
+	<p>For a finer level of control, use the SASS <code>button</code> mixin. Look at the mixin definition below to learn how it works.</p>
+	<pre class="language-sass"><code>@mixin button(
+	$button-color: gray,
+	$height: 36px,
+	$padding-sides: 20px,
+	$disabled: false
+)</code></pre>
 
 	<p>The button mixin accepts 4 optional parameters.</p>
 	<ol>
@@ -16,64 +165,4 @@
 		<li><b>padding-sides:</b> Padding in pixels</li>
 		<li><b>disabled:</b> A boolean (true or false) value determines whether the button is inactive</li>
 	</ol>
-
-	<h4>Example buttons and the SASS code required to style them</h4>
-	<br>
-	<div class="buttons">
-		<div class="grid-4">
-			<div class="span-1">
-				<a class="button-1">Click me, maybe?</a>
-			</div>
-			<div class="span-3">
-				<pre class="language-sass"><code>+button(green, 50px, 40px)</code></pre>
-			</div>
-		</div>
-		<br>
-		<div class="grid-4">
-			<div class="span-1">
-				<a class="button-2">I am disabled</a>
-			</div>
-			<div class="span-3">
-				<pre class="language-sass"><code>+button(lightgray, 50px, 40px, true)</code></pre>
-			</div>
-		</div>
-		<br>
-		<div class="grid-4">
-			<div class="span-1">
-				<a class="button-3">Default</a>
-			</div>
-			<div class="span-3">
-				<pre class="language-sass"><code>+button</code></pre>
-			</div>
-		</div>
-		<br>
-		<a class="button-4">red</a>
-		<a class="button-5">blue</a>
-		<a class="button-6">orange</a>
-		<a class="button-7">pink</a>
-		<a class="button-8">darkblue</a>
-		<a class="button-9">purple</a>
-		<a class="button-10">magenta</a>
-		<a class="button-11">gray</a>
-		<a class="button-12">lightgray</a>
-		<a class="button-13">green</a>
-		<br>
-		<br>
-		<a class="button-13"><b>+</b></a>
-		<a class="button-13"><b>-</b></a>
-		<a class="button-13"><b>&times;</b></a>
-		<a class="button-13"><b>&uarr;</b></a>
-		<a class="button-13"><b>&darr;</b></a>
-		<a class="button-13"><b>&larr;</b></a>
-		<a class="button-13"><b>&rarr;</b></a>
-		<a class="button-13"><b>&raquo;</b></a>
-		<a class="button-13"><b>&laquo;</b></a>
-		<a class="button-13"><b>&#131;</b></a>
-		<a class="button-13"><b><small>&#x25B2;</small></b></a>
-		<a class="button-13"><b>&and;</b></a>
-		<a class="button-13"><b>&or;</b></a>
-		<a class="button-13"><b>&spades;</b></a>
-		<a class="button-13"><b>&clubs;</b></a>
-		<a class="button-13"><b>&hearts;</b></a>
-	</div>
 {% endblock %}

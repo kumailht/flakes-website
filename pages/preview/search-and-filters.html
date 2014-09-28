@@ -4,20 +4,20 @@
 
 {% block content %}
 	<h1>Search, filters and actions</h1>
-	<p>Most admin applications are simply an interface to a database. The most important bit in an admin application then might just be how you search through data and run actions on it.</p>
+	<h3>Most admin applications are simply an interface to a database. The most important bit in an admin application then might just be how you search through data and run actions on it.</h3>
 
 	<h4>The Search Box</h4>
 	<p>The search spans the width of the container making it quite prominent. Large, simple type makes it easy to use. The <code>autofocus</code> property helps give it focus on page load.</p>
 
 	<div class="flakes-search">
-		<input class="search-box" placeholder="Search">
+		<input class="search-box" placeholder="Search" autofocus>
 	</div>
 
-<pre class="language-markup"><code>&lt;div class=&quot;search&quot;&gt;
+<pre class="language-markup"><code>&lt;div class=&quot;flakes-search&quot;&gt;
 	&lt;input class=&quot;search-box&quot; placeholder=&quot;Search Products&quot; autofocus&gt;
 &lt;/div&gt;</code></pre>
-	<br>
 
+	<br>
 	<h4>Search Filters</h4>
 	<p>More often than not, you will need to apply filters to search queries. Simple search filters like the ones below will come in handy.</p>
 	<div class="flakes-search">
@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-<pre class="language-markup"><code>&lt;div class=&quot;search&quot;&gt;
+<pre class="language-markup"><code>&lt;div class=&quot;flakes-search&quot;&gt;
 	&lt;input class=&quot;search-box&quot; placeholder=&quot;Search&quot; autofocus&gt;
 	&lt;div class=&quot;filters&quot;&gt;
 		&lt;label class=&quot;filter-checkbox&quot;&gt;
@@ -41,22 +41,26 @@
 &lt;/div&gt;</code></pre>
 
 	<br>
-
 	<h4>Actions Bar</h4>
 	<p>Searching and filtering data is all fine and good. But what about taking actions of subsets of data? The actions bar is a container for buttons or actions that can be taken on data.</p>
 
-	<div class="flakes-actions-bar" style="margin-bottom:0">
-		<a class="right" href="">Add a product</a>
-		<a class="right" href="">Export</a>
-		<a href="">Delete</a><a href="">Edit</a>
+	<div class="flakes-actions-bar">
+		<a class="action button-gray smaller right" href="">Add a product</a>
+		<a class="action button-gray smaller right" href="">Export</a>
+
+		<a class="action button-gray smaller" href="">Delete</a>
+		<a class="action button-gray smaller" href="">Edit</a>
 	</div>
 
-<pre class="language-markup"><code>&lt;div class=&quot;actions-bar&quot;&gt;
-	&lt;a class=&quot;right&quot; href=&quot;&quot;&gt;Add a product&lt;/a&gt;
-	&lt;a class=&quot;right&quot; href=&quot;&quot;&gt;Export&lt;/a&gt;
-	&lt;a href=&quot;&quot;&gt;Delete&lt;/a&gt;&lt;a href=&quot;&quot;&gt;Edit&lt;/a&gt;
+<pre class="language-markup"><code>&lt;div class=&quot;flakes-actions-bar&quot;&gt;
+	&lt;a class=&quot;action button-gray smaller right&quot; href=&quot;&quot;&gt;Add a product&lt;/a&gt;
+	&lt;a class=&quot;action button-gray smaller right&quot; href=&quot;&quot;&gt;Export&lt;/a&gt;
+
+	&lt;a class=&quot;action button-gray smaller&quot; href=&quot;&quot;&gt;Delete&lt;/a&gt;
+	&lt;a class=&quot;action button-gray smaller&quot; href=&quot;&quot;&gt;Edit&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 
+	<br>
 	<h4>Search + Filters + Actions</h4>
 	<p>The beautiful thing about the above three units is that they play well together. You can combine all three to form a single unit. Notice that everything is still responsive and sticks together nicely.</p>
 	<div class="flakes-search">
@@ -66,9 +70,11 @@
 			<label class="filter-checkbox"><input class="checkbox" type="checkbox"> Filter 2</label>
 		</div>
 	</div>
-	<div class="flakes-actions-bar" style="margin-bottom:0">
-		<a class="right" href="">Add a product</a>
-		<a class="right" href="">Export</a>
-		<a href="">Delete</a><a href="">Edit</a>
+	<div class="flakes-actions-bar">
+		<a class="action button-gray smaller right" href="">Add a product</a>
+		<a class="action button-gray smaller right" href="">Export</a>
+
+		<a class="action button-gray smaller" href="">Delete</a>
+		<a class="action button-gray smaller" href="">Edit</a>
 	</div>
 {% endblock %}

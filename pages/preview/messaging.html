@@ -3,29 +3,21 @@
 {% block title %}Messaging {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1>Messaging</h1>
+	<h1>Alerts & Messages</h1>
+	<h3>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</h3>
 
-	<big><p>Messaging is an important part of any webapplication. That is why Flakes has builtin support for easy to use messaging.</p></big>
+	<br>
 
-	<h3>Simple messages</h3>
+	<h3>Examples</h3>
+	<div class="flakes-message">Just a message.</div>
+	<div class="flakes-message error">This is an error message.</div>
+	<div class="flakes-message warning">This is a warning.</div>
+	<div class="flakes-message success">This is a success message.</div>
+	<div class="flakes-message information">This is informative.</div>
+	<div class="flakes-message tip">This is a handy tip.</div>
 
-	<p class="flakes-message">Just a message.</p>
-	<p class="flakes-message error">This is an error message.</p>
-	<p class="flakes-message warning">This is a warning.</p>
-	<p class="flakes-message success">This is a success message.</p>
-	<p class="flakes-message information">This is informative.</p>
-	<p class="flakes-message tip">This is a handy tip.</p>
-
-<pre class="language-markup"><code>&lt;p class=&quot;message&quot;&gt;Just a message.&lt;/p&gt;
-&lt;p class=&quot;message error&quot;&gt;This is an error message.&lt;/p&gt;
-&lt;p class=&quot;message warning&quot;&gt;This is a warning.&lt;/p&gt;
-&lt;p class=&quot;message success&quot;&gt;This is a success message.&lt;/p&gt;
-&lt;p class=&quot;message information&quot;&gt;This is informative.&lt;/p&gt;
-&lt;p class=&quot;message tip&quot;&gt;This is a handy tip.&lt;/p&gt;</code></pre>
-
-	<h3>Extended messages</h3>
 	<div class="flakes-message">
-		<b>This is a title</b><br>
+		<b>Extended message</b><br>
 		This message has a title and is longer. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. <br>
 		<ol>
 			<li>Mobis modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</li>
@@ -33,4 +25,12 @@
 			<li>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</li>
 		</ol>
 	</div>
+
+	<h3>Usage</h3>
+<pre class="language-markup"><code>&lt;p class=&quot;message&quot;&gt;Just a message.&lt;/p&gt;
+&lt;p class=&quot;message error&quot;&gt;This is an error message.&lt;/p&gt;
+&lt;p class=&quot;message warning&quot;&gt;This is a warning.&lt;/p&gt;
+&lt;p class=&quot;message success&quot;&gt;This is a success message.&lt;/p&gt;
+&lt;p class=&quot;message information&quot;&gt;This is informative.&lt;/p&gt;
+&lt;p class=&quot;message tip&quot;&gt;This is a handy tip.&lt;/p&gt;</code></pre>
 {% endblock %}

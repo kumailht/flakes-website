@@ -1,11 +1,13 @@
 {% extends "preview.html" %}
 
-{% block title %}Simple Forms {{ block.super }}{% endblock %}
+{% block title %}Native Forms {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1>Simple Forms</h1>
+	<h1>Native Forms</h1>
 
-	<p><big>The form framework uses three simple libraries to do some fairly powerful stuff with very little effort.</big></p>
+	<h3>There is nothing wrong with how form elements look by default. Infact, they look simple, they are functional and robust. Exactly what we need.</h3>
+
+	<br>
 
 	<div class="grid-2 gutter-20">
 		<div class="span-1">
@@ -110,4 +112,35 @@
 			</fieldset>
 		</div>
 	</div>
+
+	<br>
+
+	<h3>Usage</h3>
+	<p>You already know how to use this component because it changes nothing! All it does is clean up the elements a bit and give it a nice shine. But here's an example anyways:</p>
+	<pre><code class="language-markup">&lt;fieldset&gt;
+	&lt;legend&gt;Personal Information&lt;/legend&gt;
+	&lt;form&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;label&gt;First Name&lt;/label&gt;
+				&lt;input type=&quot;text&quot; placeholder=&quot;Your first name here&quot;&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;label&gt;Last Name&lt;/label&gt;
+				&lt;input type=&quot;text&quot;&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;label&gt;Email Address&lt;/label&gt;
+				&lt;input type=&quot;email&quot; required&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;label&gt;Address&lt;/label&gt;
+				&lt;textarea&gt;&lt;/textarea&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;input type=&quot;submit&quot;&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/form&gt;
+&lt;/fieldset&gt;</code></pre>
 {% endblock %}

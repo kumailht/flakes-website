@@ -1,21 +1,20 @@
 {% extends "preview.html" %}
 
-{% block title %}Easy Grid {{ block.super }}{% endblock %}
+{% block title %}Simple Grid {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1>Easy Grid</h1>
-	<b><big><p>Simple grid is a collection of classes that you can use to build extremely flexible grid layouts. These grids are responsive and simple to implement.</p></big></b>
+	<h1>Simple Grid</h1>
+	<h3>A collection of classes to build grid based layouts with absolute ease. This is the simplest grid system you'll love to use.</h3>
 
-	<h3>Usage</h3>
-	<p>Below is a simple 6 column grid and the markup used to create it. Elements inside the grid can span from 1 to 6 columns. Combined, they should not span more than the maximum number of columns. Our grid of 6 columns has 4 child elements spanning a total of 6 columns.</p>
-	<div class="grid-6">
-		<div class="span-1" style="background:#bbb; padding:20px"><mark>.span-1</mark></div>
-		<div class="span-3" style="background:#ddd; padding:20px"><mark>.span-3</mark></div>
-		<div class="span-1" style="background:#bbb; padding:20px"><mark>.span-1</mark></div>
-		<div class="span-1" style="background:#ddd; padding:20px"><mark>.span-1</mark></div>
+	<h3>Overview</h3>
+	<p>Have a look at this really simple grid and read the markup used to create it.</p>
+	<div class="grid-6 gutter-10">
+		<div class="span-1"><div style="background:#bbb; padding:20px"><mark>.span-1</mark></div></div>
+		<div class="span-3"><div style="background:#ddd; padding:20px"><mark>.span-3</mark></div></div>
+		<div class="span-1"><div style="background:#bbb; padding:20px"><mark>.span-1</mark></div></div>
+		<div class="span-1"><div style="background:#ddd; padding:20px"><mark>.span-1</mark></div></div>
 	</div>
-
-<pre><code class="language-markup">&lt;div class=&quot;grid-6 gutter-20&quot;&gt;
+<pre><code class="language-markup">&lt;div class=&quot;grid-6 gutter-10&quot;&gt;
 	&lt;div class=&quot;span-1&quot;&gt;.span-1&lt;/div&gt;
 	&lt;div class=&quot;span-3&quot;&gt;.span-3&lt;/div&gt;
 	&lt;div class=&quot;span-1&quot;&gt;.span-1&lt;/div&gt;
@@ -23,8 +22,48 @@
 &lt;/div&gt;
 </code></pre>
 
-	<p>Use <code class="language-markup">.gutter-n</code> classes to space out your spans. All grids below have a <code class="language-markup">.gutter-20</code> class to give a 20px gutter. Gutters can be 10, 20, 40, 60 or 80 pixels wide.</p>
+	<h3>Usage</h3>
+	<p>Using only three classes, we were able to create this fairly complex grid. The three classes you'll need to learn are <code>grid-n</code>, <code>gutter-n</code> and <code>span-n</code>.</p>
 
+	<h4>.grid-n</h4>
+	<p>Every grid starts here. The grid class can range from <code>grid-1</code> to <code>grid-12</code>. Where <code>n</code> is the number of columns in your grid.</p>
+
+	<h5 style="margin-top: 0">An example grid with 6 columns:</h5>
+	<div class="test-grid grid-6 gutter-10">
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+	</div>
+
+	<br>
+	<h4>.gutter-n</h4>
+	<p>Columns in a grid can be spaced apart using the <code>gutter-n</code> class. Possible values for <code>n</code> are <code>10</code>, <code>20</code>, <code>30</code>, <code>40</code>, <code>50</code>, <code>60</code> or <code>80</code> pixels.</p>
+
+	<h5 style="margin-top: 0">Example grid with a gutter of 40px:</h5>
+	<div class="test-grid grid-6 gutter-40">
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+		<div class="span-1"><span></span></div>
+	</div>
+
+	<br>
+	<h4>.span-n</h4>
+	<p>Direct children of your grid can span multiple columns. <code>n</code> can range from <code>1</code> to the maximum number of columns in your grid.</p>
+
+	<h5 style="margin-top: 0">Grid children spanning 3, 2 and 1 columns:</h5>
+	<div class="test-grid grid-6 gutter-10">
+		<div class="span-3"><span></span></div>
+		<div class="span-2"><span></span></div>
+		<div class="span-1"><span></span></div>
+	</div>
+
+	<br>
 	<h2>Examples Grids</h2>
 
 	<div class="test-grid grid-1 gutter-20">

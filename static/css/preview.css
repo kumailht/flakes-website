@@ -26,12 +26,12 @@ h2.welcome-subtitle {
   .legend span.last {
     background: #7a92a3; }
 
-.test-grid p span, .test-grid div span {
-  background-color: #eeeeee;
+.test-grid > div span, .test-grid > p span {
   font: 18px monospace;
   color: #aaaaaa;
+  background-color: #eeeeee;
   display: block;
   text-align: center;
   padding: 10px 0; }
-.test-grid p span span, .test-grid div span span {
-  background: #dddddd; }
+  .test-grid > div span span, .test-grid > p span span {
+    background: #dddddd; }
