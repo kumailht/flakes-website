@@ -44,46 +44,7 @@
 {% endblock %}
 
 {% block scripts %}
-	{{ block.super }}
-
 	<script src="{{ STATIC_URL }}/bower_components/raphael/raphael.js"></script>
 	<script src="{{ STATIC_URL }}/bower_components/morrisjs/morris.js"></script>
 	<link rel="stylesheet" href="{{ STATIC_URL }}/bower_components/morrisjs/morris.css">
-
-	<script type="text/javascript">
-		var rand = function(min, max) { return Math.floor(Math.random() * (max - min)) + min };
-		var i = 0;
-		var sample_data = [];
-		while (i < 100) {
-			var d = new Date();
-			d.setDate(d.getDate() - (100 - i));
-
-			sample_data.push({
-				y: d.getTime(),
-				a: rand(3000, 3600) + i * rand(20, 30),
-				b: rand(1500, 2000) + i * rand(30, 40)
-			});
-			i++;
-		}
-
-		Morris.Line({
-			element: 'example-graph',
-			data: sample_data,
-			xkey: 'y',
-			ykeys: ['a', 'b'],
-			labels: ['Revenue', 'Units Sold'],
-			smooth: false,
-			ymin: 1000,
-			xLabels: 'month',
-			resize: true,
-			xLabelFormat: function (d) {
-				var curr_date = d.getDate();
-				var curr_month = d.getMonth();
-				var curr_year = d.getFullYear();
-				var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-
-				return monthNames[curr_month] + ' ' + curr_year;
-			}
-		});
-	</script>
 {% endblock %}

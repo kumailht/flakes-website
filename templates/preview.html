@@ -78,24 +78,21 @@
 		</div>
 	</div>
 
-	{% block scripts %}
-		<script src="{{ STATIC_URL }}/bower_components/jquery/dist/jquery.js"></script>
-		<script src="{{ STATIC_URL }}/bower_components/snapjs/snap.js"></script>
 
-		<script type="text/javascript" src="{{ STATIC_URL }}/bower_components/responsive-elements/responsive-elements.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/prism/themes/prism.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.css">
 
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.css">
-		<script src="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/jquery/dist/jquery.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/snapjs/snap.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/responsive-elements/responsive-elements.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/gridforms/gridforms/gridforms.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/prism/prism.js"></script>
 
-		<!-- flakes -->
-		<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
-		<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
+	
+	{% block scripts %}{% endblock %}
 
-		<!-- Preview only -->
-		<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
-
-		<script src="{{ STATIC_URL }}/bower_components/prism/prism.js"></script>
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/bower_components/prism/themes/prism.css">
-	{% endblock %}
+	<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
 </body>
 </html>

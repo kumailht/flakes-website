@@ -1,11 +1,14 @@
 {% extends "preview.html" %}
 
-{% block title %}Typography {{ block.super }}{% endblock %}
+{% block title %}Buttons {{ block.super }}{% endblock %}
 
 {% block content %}
 	<h1>Buttons</h1>
+
 	<p>The quickest way to make buttons in Flakes is to use the <code>button</code> mixin. With just one simple line of SASS code, you can style a button in its entirety. Look at the mixin definition below to learn how it works.</p>
+
 	<pre class="language-sass"><code>=button($button-color: gray, $height: 36px, $padding-sides: 20px, $disabled: false)</code></pre>
+
 	<p>The button mixin accepts 4 optional parameters.</p>
 	<ol>
 		<li><b>button-color:</b> Accepts any one of the following: green, red, blue, orange, pink, gray, lightgray, darkblue, purple, magenta.</li>
@@ -13,6 +16,7 @@
 		<li><b>padding-sides:</b> Padding in pixels</li>
 		<li><b>disabled:</b> A boolean (true or false) value determines whether the button is inactive</li>
 	</ol>
+
 	<h4>Example buttons and the SASS code required to style them</h4>
 	<br>
 	<div class="buttons">

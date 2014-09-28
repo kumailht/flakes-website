@@ -7,6 +7,7 @@
     "prism": "git@github.com:LeaVerou/prism.git#gh-pages",
     "snapjs": "~1.9.3",
     "responsive-elements": "~1.0.0",
-    "gridforms": "~1.0.2"
+    "gridforms": "~1.0.2",
+    "list.js": "~1.1.1"
   }
 }

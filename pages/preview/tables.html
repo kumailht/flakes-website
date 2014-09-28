@@ -1,17 +1,12 @@
 {% extends "preview.html" %}
 
-{% block title %}Typography {{ block.super }}{% endblock %}
+{% block title %}Tables {{ block.super }}{% endblock %}
 
 {% block content %}
-	<div class="head">
-		<p class="breadcrumbs"><a href="">UI Framework</a> /</p>
-		<h1>Tables</h1>
-	</div>
+	<h1>Tables</h1>
 
 	<br>
-
-	<!-- explain responsivness here -->
-	<table class="responsive">
+	<table class="flakes-table responsive">
 		<colgroup>
 			<col span="1" style="width:40%" />
 		</colgroup>
@@ -75,9 +70,9 @@
 		</tbody>
 	</table>
 
-	<br><br><br>
+	<br><br>
 
-	<table>
+	<table class="flakes-table">
 		<colgroup>
 			<col span="1" style="width:20px" />
 			<col span="1" style="width:40%" />
@@ -150,5 +145,4 @@
 			</tr>
 		</tbody>
 	</table>
-
 {% endblock %}

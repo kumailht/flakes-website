@@ -26,8 +26,12 @@ h2.welcome-subtitle {
   .legend span.last {
     background: #7a92a3; }
 
-@media only screen and (min-width: 0) and (max-width: 700px) {
-  .dashboard-sample-table tr td:nth-child(4) {
-    display: none; }
-  .dashboard-sample-table tr td:nth-child(5) {
-    display: none; } }
+.test-grid p span, .test-grid div span {
+  background-color: #eeeeee;
+  font: 18px monospace;
+  color: #aaaaaa;
+  display: block;
+  text-align: center;
+  padding: 10px 0; }
+.test-grid p span span, .test-grid div span span {
+  background: #dddddd; }

@@ -1,6 +1,6 @@
 {% extends "preview.html" %}
 
-{% block title %}Grid Forms {{ block.super }}{% endblock %}
+{% block title %}Messaging {{ block.super }}{% endblock %}
 
 {% block content %}
 	<h1>Messaging</h1>
@@ -8,12 +8,14 @@
 	<big><p>Messaging is an important part of any webapplication. That is why Flakes has builtin support for easy to use messaging.</p></big>
 
 	<h3>Simple messages</h3>
+
 	<p class="flakes-message">Just a message.</p>
 	<p class="flakes-message error">This is an error message.</p>
 	<p class="flakes-message warning">This is a warning.</p>
 	<p class="flakes-message success">This is a success message.</p>
 	<p class="flakes-message information">This is informative.</p>
 	<p class="flakes-message tip">This is a handy tip.</p>
+
 <pre class="language-markup"><code>&lt;p class=&quot;message&quot;&gt;Just a message.&lt;/p&gt;
 &lt;p class=&quot;message error&quot;&gt;This is an error message.&lt;/p&gt;
 &lt;p class=&quot;message warning&quot;&gt;This is a warning.&lt;/p&gt;
