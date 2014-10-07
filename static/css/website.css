@@ -322,6 +322,7 @@ table {
     clear: both; }
   .grid-1 > .span-1 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-1 .span-1 {
@@ -400,12 +401,14 @@ table {
     clear: both; }
   .grid-2 > .span-1 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-2 .span-1 {
       width: 100%; } }
   .grid-2 > .span-2 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-2 .span-2 {
@@ -547,18 +550,21 @@ table {
     clear: both; }
   .grid-3 > .span-1 {
     width: 33.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-3 .span-1 {
       width: 100%; } }
   .grid-3 > .span-2 {
     width: 66.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-3 .span-2 {
       width: 100%; } }
   .grid-3 > .span-3 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-3 .span-3 {
@@ -763,24 +769,28 @@ table {
     clear: both; }
   .grid-4 > .span-1 {
     width: 25%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-4 .span-1 {
       width: 100%; } }
   .grid-4 > .span-2 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-4 .span-2 {
       width: 100%; } }
   .grid-4 > .span-3 {
     width: 75%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-4 .span-3 {
       width: 100%; } }
   .grid-4 > .span-4 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-4 .span-4 {
@@ -1048,30 +1058,35 @@ table {
     clear: both; }
   .grid-5 > .span-1 {
     width: 20%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-5 .span-1 {
       width: 100%; } }
   .grid-5 > .span-2 {
     width: 40%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-5 .span-2 {
       width: 100%; } }
   .grid-5 > .span-3 {
     width: 60%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-5 .span-3 {
       width: 100%; } }
   .grid-5 > .span-4 {
     width: 80%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-5 .span-4 {
       width: 100%; } }
   .grid-5 > .span-5 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-5 .span-5 {
@@ -1402,36 +1417,42 @@ table {
     clear: both; }
   .grid-6 > .span-1 {
     width: 16.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-1 {
       width: 100%; } }
   .grid-6 > .span-2 {
     width: 33.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-2 {
       width: 100%; } }
   .grid-6 > .span-3 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-3 {
       width: 100%; } }
   .grid-6 > .span-4 {
     width: 66.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-4 {
       width: 100%; } }
   .grid-6 > .span-5 {
     width: 83.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-5 {
       width: 100%; } }
   .grid-6 > .span-6 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-6 .span-6 {
@@ -1825,42 +1846,49 @@ table {
     clear: both; }
   .grid-7 > .span-1 {
     width: 14.28571%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-1 {
       width: 100%; } }
   .grid-7 > .span-2 {
     width: 28.57143%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-2 {
       width: 100%; } }
   .grid-7 > .span-3 {
     width: 42.85714%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-3 {
       width: 100%; } }
   .grid-7 > .span-4 {
     width: 57.14286%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-4 {
       width: 100%; } }
   .grid-7 > .span-5 {
     width: 71.42857%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-5 {
       width: 100%; } }
   .grid-7 > .span-6 {
     width: 85.71429%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-6 {
       width: 100%; } }
   .grid-7 > .span-7 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-7 .span-7 {
@@ -2317,48 +2345,56 @@ table {
     clear: both; }
   .grid-8 > .span-1 {
     width: 12.5%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-1 {
       width: 100%; } }
   .grid-8 > .span-2 {
     width: 25%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-2 {
       width: 100%; } }
   .grid-8 > .span-3 {
     width: 37.5%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-3 {
       width: 100%; } }
   .grid-8 > .span-4 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-4 {
       width: 100%; } }
   .grid-8 > .span-5 {
     width: 62.5%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-5 {
       width: 100%; } }
   .grid-8 > .span-6 {
     width: 75%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-6 {
       width: 100%; } }
   .grid-8 > .span-7 {
     width: 87.5%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-7 {
       width: 100%; } }
   .grid-8 > .span-8 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-8 .span-8 {
@@ -2878,54 +2914,63 @@ table {
     clear: both; }
   .grid-9 > .span-1 {
     width: 11.11111%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-1 {
       width: 100%; } }
   .grid-9 > .span-2 {
     width: 22.22222%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-2 {
       width: 100%; } }
   .grid-9 > .span-3 {
     width: 33.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-3 {
       width: 100%; } }
   .grid-9 > .span-4 {
     width: 44.44444%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-4 {
       width: 100%; } }
   .grid-9 > .span-5 {
     width: 55.55556%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-5 {
       width: 100%; } }
   .grid-9 > .span-6 {
     width: 66.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-6 {
       width: 100%; } }
   .grid-9 > .span-7 {
     width: 77.77778%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-7 {
       width: 100%; } }
   .grid-9 > .span-8 {
     width: 88.88889%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-8 {
       width: 100%; } }
   .grid-9 > .span-9 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-9 .span-9 {
@@ -3508,60 +3553,70 @@ table {
     clear: both; }
   .grid-10 > .span-1 {
     width: 10%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-1 {
       width: 100%; } }
   .grid-10 > .span-2 {
     width: 20%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-2 {
       width: 100%; } }
   .grid-10 > .span-3 {
     width: 30%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-3 {
       width: 100%; } }
   .grid-10 > .span-4 {
     width: 40%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-4 {
       width: 100%; } }
   .grid-10 > .span-5 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-5 {
       width: 100%; } }
   .grid-10 > .span-6 {
     width: 60%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-6 {
       width: 100%; } }
   .grid-10 > .span-7 {
     width: 70%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-7 {
       width: 100%; } }
   .grid-10 > .span-8 {
     width: 80%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-8 {
       width: 100%; } }
   .grid-10 > .span-9 {
     width: 90%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-9 {
       width: 100%; } }
   .grid-10 > .span-10 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-10 .span-10 {
@@ -4207,66 +4262,77 @@ table {
     clear: both; }
   .grid-11 > .span-1 {
     width: 9.09091%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-1 {
       width: 100%; } }
   .grid-11 > .span-2 {
     width: 18.18182%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-2 {
       width: 100%; } }
   .grid-11 > .span-3 {
     width: 27.27273%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-3 {
       width: 100%; } }
   .grid-11 > .span-4 {
     width: 36.36364%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-4 {
       width: 100%; } }
   .grid-11 > .span-5 {
     width: 45.45455%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-5 {
       width: 100%; } }
   .grid-11 > .span-6 {
     width: 54.54545%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-6 {
       width: 100%; } }
   .grid-11 > .span-7 {
     width: 63.63636%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-7 {
       width: 100%; } }
   .grid-11 > .span-8 {
     width: 72.72727%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-8 {
       width: 100%; } }
   .grid-11 > .span-9 {
     width: 81.81818%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-9 {
       width: 100%; } }
   .grid-11 > .span-10 {
     width: 90.90909%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-10 {
       width: 100%; } }
   .grid-11 > .span-11 {
     width: 100.0%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-11 .span-11 {
@@ -4975,72 +5041,84 @@ table {
     clear: both; }
   .grid-12 > .span-1 {
     width: 8.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-1 {
       width: 100%; } }
   .grid-12 > .span-2 {
     width: 16.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-2 {
       width: 100%; } }
   .grid-12 > .span-3 {
     width: 25%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-3 {
       width: 100%; } }
   .grid-12 > .span-4 {
     width: 33.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-4 {
       width: 100%; } }
   .grid-12 > .span-5 {
     width: 41.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-5 {
       width: 100%; } }
   .grid-12 > .span-6 {
     width: 50%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-6 {
       width: 100%; } }
   .grid-12 > .span-7 {
     width: 58.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-7 {
       width: 100%; } }
   .grid-12 > .span-8 {
     width: 66.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-8 {
       width: 100%; } }
   .grid-12 > .span-9 {
     width: 75%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-9 {
       width: 100%; } }
   .grid-12 > .span-10 {
     width: 83.33333%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-10 {
       width: 100%; } }
   .grid-12 > .span-11 {
     width: 91.66667%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-11 {
       width: 100%; } }
   .grid-12 > .span-12 {
     width: 100%;
+    min-height: 1px;
     float: left; }
   @media only screen and (min-width: 0) and (max-width: 700px) {
     .grid-12 .span-12 {
@@ -5811,6 +5889,12 @@ body {
   font-family: helvetica, arial, sans-serif;
   line-height: 1.3; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 5px;
+  max-width: 70ex; }
+  h1 + p, h1 + code, h1 + pre, h1 + ul, h1 + ol, h1 + table, h2 + p, h2 + code, h2 + pre, h2 + ul, h2 + ol, h2 + table, h3 + p, h3 + code, h3 + pre, h3 + ul, h3 + ol, h3 + table, h4 + p, h4 + code, h4 + pre, h4 + ul, h4 + ol, h4 + table, h5 + p, h5 + code, h5 + pre, h5 + ul, h5 + ol, h5 + table, h6 + p, h6 + code, h6 + pre, h6 + ul, h6 + ol, h6 + table {
+    margin-top: 0; }
+
 a {
   color: #214478; }
   a:hover {
@@ -5821,11 +5905,17 @@ a {
   .block .inner {
     max-width: 940px;
     margin: 0 auto; }
+    @media only screen and (min-width: 0) and (max-width: 940px) {
+      .block .inner {
+        margin: 0 40px; } }
 
 .intro {
   background: #cccccc;
   border-bottom: 2px solid #b3b3b3;
-  padding: 70px 0 50px 0; }
+  padding: 50px 0; }
+  @media only screen and (min-width: 0) and (max-width: 500px) {
+    .intro {
+      padding: 40px 0; } }
   .intro .inner {
     position: relative;
     color: #374548; }
@@ -5838,35 +5928,75 @@ a {
       max-width: 600px; }
     .intro .inner h1 {
       font-size: 45px;
+      font-size: 2.8125rem;
       letter-spacing: -2px;
       line-height: 1;
       margin-bottom: 0; }
+      @media only screen and (min-width: 0) and (max-width: 500px) {
+        .intro .inner h1 {
+          letter-spacing: -1px;
+          font-size: 30px;
+          font-size: 1.875rem; } }
     .intro .inner h2 {
       margin-top: 10px;
       margin-bottom: 0;
       font-size: 20px;
+      font-size: 1.25rem;
       font-weight: normal; }
+      .intro .inner h2 span {
+        text-decoration: underline; }
     .intro .inner p {
       font-size: 14px;
+      font-size: 0.875rem;
       margin-top: 10px;
       color: #4d6165; }
     .intro .inner a {
-      font-size: 18px;
+      font-size: 17px;
+      font-size: 1.0625rem;
       font-weight: bold; }
+    .intro .inner .twitter-share-button, .intro .inner .github-star-button {
+      position: relative;
+      top: 4px; }
+    .intro .inner .twitter-share-button {
+      left: -10px; }
     .intro .inner .mobile-preview {
       position: absolute;
       right: 0;
-      top: 0; }
+      top: -20px; }
+      @media only screen and (min-width: 0) and (max-width: 940px) {
+        .intro .inner .mobile-preview {
+          display: none; } }
 
 .about-flakes h1, .design-and-research h1 {
   font-size: 45px;
+  font-size: 2.8125rem;
   letter-spacing: -2px;
   word-spacing: -2px;
   margin-top: 70px;
   margin-bottom: 0; }
+  @media only screen and (min-width: 0) and (max-width: 500px) {
+    .about-flakes h1, .design-and-research h1 {
+      font-size: 28px;
+      font-size: 1.75rem;
+      letter-spacing: -1px; } }
 
 .about-flakes .sketches {
   margin-top: 50px; }
+
+.design-and-research p {
+  font-size: 14px;
+  font-size: 0.875rem; }
+.design-and-research .consultation {
+  border: 2px solid #f5f500;
+  background: #ffffcc;
+  padding: 15px;
+  margin-top: 20px; }
+  .design-and-research .consultation h5 {
+    margin-top: 0; }
+  .design-and-research .consultation p {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-size: 0.8125rem; }
 
 #seal-by-kumail {
   margin: 50px 0 100px; }

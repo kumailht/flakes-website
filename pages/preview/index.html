@@ -1,34 +1,37 @@
 {% extends "preview.html" %}
 
-{% block title %}Welcome {{ block.super }}{% endblock %}
+{% block title %}Documentation {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1 class="welcome-title title">Welcome to Flakes</h1>
-	<h2 class="welcome-subtitle">Flakes is a foundational front-end framework to build admin applications on. It is unassuming yet opinionated.</h2>
+	<h1>Getting Started</h1>
 
-	<div class="grid-3 gutter-40">
-		<div class="span-1">
-			<h4>An overview to the Flakes Admin Template Framework</h4>
-		</div>
-	</div>
+	<h3>When should you use Flakes?</h3>
+	<p>Flakes is intended to be used for business facing web applications. If you're building an internal tool to help your sales team manage leads or are building an inventory tracking solution for your Watch business, you'll need Flakes.</p>
+	<p>Flakes is a starting point, It helps you get a quick start. It is not a collection of everything you'll ever need and it doesn't aim to become one.</p>
 
-	<div class="grid-8 gutter-30">
-		<div class="span-3">
-			<h4>Flakes is boring</h4>
-			<p>It is built on top of layers of abstractions and loosely coupled code to make building application front-ends simpler. It avoids using vain effects, styles or images that do not contribute to the function of the application. The framework does not assume to know how it will be used. That complicated mumbo jumbo just to say flakes takes care of all the boring stuff so you can launch your project faster.</p>
+	<h3>What sort of layouts can I build with Flakes?</h3>
+	<p>Flakes is a collection of components. These components follow the Flakes aesthetic and go well together. Since these components are low level abstractions like forms and grids, you really can build almost anything you'll need.</p>
+	<p>I've built a few example layouts for you play around with. The navigation has an 'Example Layouts' section which you should check out.</p>
 
-			<h4>Flakes uses system fonts</h4>
-			<p>Instead of using webfonts, flakes uses system fonts. Webfonts by definition are slower than system fonts. They need to be downloaded over a network or fetched from a local cache. They also either hold back the rendering of a page or cause a flash of content being updated. Both of which are unacceptable when you need to get work done.</p>
-		</div>
-		<div class="span-3">
-			<h4>Built for the real world</h4>
-			<p>When designing flakes, I took the time to study plenty of real world admin and even non-admin applications. CRM software, Inventory Management, Website Admin, Transaction Management, etc. I wanted Flakes to be agnostic enough that any one of those applications could be built with it.</p>
 
-			<h4>Flakes doesn't use images,<br> gradients or effects</h4>
-			<p>Look around, there are only a handful of images in use. Gradients are non-existent and so are transition effects. This provides an experience that is quick and simple. A nice side effect is that it makes things easy for the developer which is never a bad thing.</p>
-		</div>
-		<div class="span-2">
-			<img src="{{ STATIC_URL }}/img/preview/flakes-early-sketch.png" width="100%">
-		</div>
-	</div>
+	<h3>How do I start using Flakes?</h3>
+
+	<h4>Get Flakes</h4>
+	<p>Download the Flakes framework on <a href="https://github.com/kumailht/flakes">Github</a></p>
+
+	<h4>Install Dependencies</h4>
+	<p>Use Bower to install the dependencies.</p>
+	<code>Bower install</code>
+
+	<h4>Use the example</h4>
+	<p>The framework comes with an example file that you'll find helpful in getting started.</p>
+
+	<h3>How do I contribute to Flakes?</h3>
+	<p>Until now, Flakes has been a one man show with me designing and developing for it. When you work on something for long enough, you'll run out of ideas on how to improve it. If you are keen on contributing I'd love to have you make a pull request with your change. If it's a sufficiently big change, I'd recommend filing an issue on Github to discuss the change to avoid duplicate or unnecessary work.</p>
+
+	<h3>How do I get help?</h3>
+	<p>If you need help with something the documentation does not cover, send me an email and I'd be happy to help you. <a href="contact@kumailht.com">contact@kumailht.com</a></p>
+
+	<h3>Report a bug</h3>
+	<p>Please report all bugs on the Github issues page. If you have some time, I'd appreciate it a whole lot more if you could make a pull request with a fix.</p>
 {% endblock %}

@@ -1,5 +1,9 @@
 @import "../flakes/css/lib/normalize"
+@import "../flakes/css/utils/general"
 @import "../flakes/css/components/grid"
+
+$SITE_WIDTH: 940px
+$MOBILE: 500px
 
 $silver_blue: #374548
 $ink_blue: #214478
@@ -13,6 +17,12 @@ body
 	font-family: helvetica, arial, sans-serif
 	line-height: 1.3
 
+h1, h2, h3, h4, h5, h6
+	margin-bottom: 5px
+	max-width: 70ex
+	& + p, & + code, & + pre, & + ul, & + ol, & + table
+		margin-top: 0
+
 a
 	color: $ink_blue
 	&:hover
@@ -21,13 +31,17 @@ a
 .block
 	overflow: hidden
 	.inner
-		max-width: 940px
+		max-width: $SITE_WIDTH
 		margin: 0 auto
+		+breakpoints(0, $SITE_WIDTH)
+			margin: 0 40px
 
 .intro
 	background: #CCCCCC
 	border-bottom: 2px solid #b3b3b3
-	padding: 70px 0 50px 0
+	padding: 50px 0
+	+breakpoints(0, $MOBILE)
+		padding: 40px 0
 	.inner
 		position: relative
 		color: $silver_blue
@@ -39,41 +53,70 @@ a
 		h1, h2, p
 			max-width: 600px
 		h1
-			font-size: 45px
+			+size(45)
 			letter-spacing: -2px
 			line-height: 1
 			margin-bottom: 0
+			+breakpoints(0, $MOBILE)
+				letter-spacing: -1px
+				+size(30)
 		h2
 			margin-top: 10px
 			margin-bottom: 0
-			font-size: 20px
+			+size(20)
 			font-weight: normal
+			span
+				text-decoration: underline
 		p
-			font-size: 14px
+			+size(14)
 			margin-top: 10px
 			color: lighten($silver_blue, 10%)
 		a
-			font-size: 18px
+			+size(17)
 			font-weight: bold
+
+		.twitter-share-button, .github-star-button
+			position: relative
+			top: 4px
+		.twitter-share-button
+			left: -10px
+
 		.mobile-preview
 			position: absolute
 			right: 0
-			top: 0
+			top: -20px
+			+breakpoints(0, $SITE_WIDTH)
+				display: none
 
 
 .about-flakes, .design-and-research
 	h1
-		font-size: 45px
+		+size(45)
 		letter-spacing: -2px
 		word-spacing: -2px
 		margin-top: 70px
 		margin-bottom: 0
+		+breakpoints(0, $MOBILE)
+			+size(28)
+			letter-spacing: -1px
 
 .about-flakes
 	.sketches
 		margin-top: 50px
 
 .design-and-research
+	p
+		+size(14)
+	.consultation
+		border: 2px solid darken(#ff0, 2%)
+		background: lighten(#ff0, 40%)
+		padding: 15px
+		margin-top: 20px
+		h5
+			margin-top: 0
+		p
+			margin-bottom: 0
+			+size(13)
 
 #seal-by-kumail
 	margin: 50px 0 100px
