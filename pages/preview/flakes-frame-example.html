@@ -1,0 +1,64 @@
+
+<!doctype html>
+<head>
+	<title>Flakes Frame Example</title>
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/flakes/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/preview.css">
+
+	<script src="{{ STATIC_URL }}/bower_components/jquery/dist/jquery.js"></script>
+	<script src="{{ STATIC_URL }}/bower_components/snapjs/snap.js"></script>
+
+	<script src="{{ STATIC_URL }}/flakes/js/base.js"></script>
+	<script src="{{ STATIC_URL }}/flakes/js/utils.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}/js/preview.js"></script>
+</head>
+
+<body>
+	<div class="flakes-frame">
+		<div class="flakes-navigation">
+			<a href="index.html" class="logo">
+				<img src="{{ STATIC_URL }}/flakes/img/logo.png" width="120">
+			</a>
+
+			<ul>
+				<li class="title">Navigation Sub Head</li>
+				<li><a href="#">Nav Item 1</a></li>
+				<li><a href="#">Nav Item 2</a></li>
+			</ul>
+
+			<p class="foot">
+				Hello <b>John Doe</b><br>
+				<a href="" class="example-link">Account</a> &bullet; <a href="" class="example-link">Logout</a>
+			</p>
+		</div>
+
+		<div class="flakes-content">
+			<div class="flakes-mobile-top-bar">
+				<a href="" class="logo-wrap">
+					<img src="{{ STATIC_URL }}/flakes/img/logo.png" height="30px">
+				</a>
+
+				<a href="" class="navigation-expand-target">
+					<img src="{{ STATIC_URL }}/flakes/img/site-wide/navigation-expand-target.png" height="26px">
+				</a>
+			</div>
+
+			<div class="view-wrap">
+				Your content sits here
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	$(function() {
+		$('.navigation-expand-target').click();
+	});
+	</script>
+</body>
+</html>

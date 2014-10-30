@@ -1,0 +1,49 @@
+{% extends "preview.html" %}
+
+{% block title %}Flakes Frame {{ block.super }}{% endblock %}
+
+{% block content %}
+	<h1>Flakes Frame</h1>
+	<h3>A simple frame which splits the browser view into a navigation and a content container.</h3>
+	<p>The Flakes layout is quite simple. The navigation is conveniently located to the left. The content is clearly seperated and easy to focus on. The content sits next to the navigation and is left aligned on the page. Just like a book. It's natural to read and use on every device.</p>
+
+	<h2>Example Frame</h2>
+	<iframe src="flakes-frame-example.html" style="border:2px solid #aaa" width="100%" height="350px"></iframe>
+
+<pre><code class="language-markup">&lt;div class=&quot;flakes-frame&quot;&gt;
+	&lt;div class=&quot;flakes-navigation&quot;&gt;
+		&lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;
+			&lt;img src=&quot;{{ STATIC_URL }}/flakes/img/logo.png&quot; width=&quot;120&quot;&gt;
+		&lt;/a&gt;
+
+		&lt;ul&gt;
+			&lt;li class=&quot;title&quot;&gt;Navigation Sub Head&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nav Item 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nav Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;p class=&quot;foot&quot;&gt;
+			Hello &lt;b&gt;John Doe&lt;/b&gt;&lt;br&gt;
+			&lt;a href=&quot;&quot; class=&quot;example-link&quot;&gt;Account&lt;/a&gt; &amp;bullet; &lt;a href=&quot;&quot; class=&quot;example-link&quot;&gt;Logout&lt;/a&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;flakes-content&quot;&gt;
+		&lt;div class=&quot;flakes-mobile-top-bar&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;logo-wrap&quot;&gt;
+				&lt;img src=&quot;{{ STATIC_URL }}/flakes/img/logo.png&quot; height=&quot;30px&quot;&gt;
+			&lt;/a&gt;
+
+			&lt;a href=&quot;&quot; class=&quot;navigation-expand-target&quot;&gt;
+				&lt;img src=&quot;{{ STATIC_URL }}/flakes/img/site-wide/navigation-expand-target.png&quot; height=&quot;26px&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;view-wrap&quot;&gt;
+			Your content sits here
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+{% endblock %}

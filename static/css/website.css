@@ -5927,8 +5927,8 @@ a {
     .intro .inner h1, .intro .inner h2, .intro .inner p {
       max-width: 600px; }
     .intro .inner h1 {
-      font-size: 45px;
-      font-size: 2.8125rem;
+      font-size: 43px;
+      font-size: 2.6875rem;
       letter-spacing: -2px;
       line-height: 1;
       margin-bottom: 0; }
@@ -5946,9 +5946,9 @@ a {
       .intro .inner h2 span {
         text-decoration: underline; }
     .intro .inner p {
-      font-size: 14px;
-      font-size: 0.875rem;
-      margin-top: 10px;
+      font-size: 16px;
+      font-size: 1rem;
+      margin-top: 0;
       color: #4d6165; }
     .intro .inner a {
       font-size: 17px;
@@ -5962,7 +5962,7 @@ a {
     .intro .inner .mobile-preview {
       position: absolute;
       right: 0;
-      top: -20px; }
+      top: 0px; }
       @media only screen and (min-width: 0) and (max-width: 940px) {
         .intro .inner .mobile-preview {
           display: none; } }
