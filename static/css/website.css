@@ -5927,8 +5927,8 @@ a {
     .intro .inner h1, .intro .inner h2, .intro .inner p {
       max-width: 600px; }
     .intro .inner h1 {
-      font-size: 43px;
-      font-size: 2.6875rem;
+      font-size: 45px;
+      font-size: 2.8125rem;
       letter-spacing: -2px;
       line-height: 1;
       margin-bottom: 0; }
@@ -5946,8 +5946,8 @@ a {
       .intro .inner h2 span {
         text-decoration: underline; }
     .intro .inner p {
-      font-size: 16px;
-      font-size: 1rem;
+      font-size: 14px;
+      font-size: 0.875rem;
       margin-top: 0;
       color: #4d6165; }
     .intro .inner a {
@@ -5981,7 +5981,7 @@ a {
       letter-spacing: -1px; } }
 
 .about-flakes .sketches {
-  margin-top: 50px; }
+  margin-top: 100px; }
 
 .design-and-research p {
   font-size: 14px;
