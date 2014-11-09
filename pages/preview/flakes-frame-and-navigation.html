@@ -1,15 +1,16 @@
 {% extends "preview.html" %}
 
-{% block title %}Flakes Frame {{ block.super }}{% endblock %}
+{% block title %}Flakes Frame & Navigation {{ block.super }}{% endblock %}
 
 {% block content %}
-	<h1>Flakes Frame</h1>
+	<h1>Flakes Frame & Navigation</h1>
 	<h3>A simple frame which splits the browser view into a navigation and a content container.</h3>
 	<p>The Flakes layout is quite simple. The navigation is conveniently located to the left. The content is clearly seperated and easy to focus on. The content sits next to the navigation and is left aligned on the page. Just like a book. It's natural to read and use on every device.</p>
 
-	<h2>Example Frame</h2>
+	<h2>Example Frame with navigation</h2>
 	<iframe src="flakes-frame-example.html" style="border:2px solid #aaa" width="100%" height="350px"></iframe>
 
+	<h2>Code example</h2>
 <pre><code class="language-markup">&lt;div class=&quot;flakes-frame&quot;&gt;
 	&lt;div class=&quot;flakes-navigation&quot;&gt;
 		&lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;

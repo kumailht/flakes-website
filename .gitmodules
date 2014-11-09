@@ -1,3 +1,4 @@
 [submodule "static/flakes"]
 	path = static/flakes
 	url = git@github.com:kumailht/flakes.git
+	branch = master
