@@ -1,5 +1,0 @@
-TODO
-
-- Make Flakes a submodule. So you have two projects, flakes-framework and flakes-framework-website.
-- Make all external libraries submodules
-
