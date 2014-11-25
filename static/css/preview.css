@@ -1,3 +1,9 @@
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
 .view-wrap > .title:first-child {
   margin: 0 0 0;
   margin-top: 12px; }
