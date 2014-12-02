@@ -5,7 +5,7 @@
 {% block content %}
 	<div class="block intro">
 		<div class="inner">
-			<img class="logo" width="150px" src="{{ STATIC_URL }}/img/logo.png">
+			<img class="logo" width="140px" src="{{ STATIC_URL }}/img/logo.png">
 			<div class="hr"></div>
 			<h1>Build better business software a lot quicker with <i>flakes</i></h1>
 			<h2>
@@ -13,10 +13,9 @@
 			</h2>
 			<p>Flakes is a combination of CSS Libraries, JavaScript Libraries and Design files that serve as a foundation. Flakes gives priority to function and usability over glitz, it takes a no-nonsense approach to user interface design.</p>
 
-			<a href="preview/index.html" target="_blank">Framework & Documentation</a>
-			&nbsp;&nbsp;
-			<a href="https://github.com/kumailht/flakes">Download on Github</a>
-
+			<a href="preview/dashboard.html" class="cta" target="_blank">Live Demo</a>
+			&nbsp;
+			<a href="preview/index.html" class="cta" target="_blank">Download & Documentation</a>
 			&nbsp;&nbsp;
 			
 			<iframe src="http://ghbtns.com/github-btn.html?user=kumailht&repo=flakes&type=watch"
@@ -28,23 +27,40 @@
 			<img class="mobile-preview" width="270px" src="{{ STATIC_URL }}/img/mobile-preview.png">
 		</div>
 	</div>
+	
+	<div class="block design-and-research">
+		<div class="inner">
+			<h1>Framework Overview</h1>
+			<img class="devices" width="100%" src="{{ STATIC_URL }}/img/devices.png">
+			<div class="grid-3 gutter-20">
+				<div class="span-1">
+					<h4>Flakes is boring</h4>
+					<p>It is built on top of layers of abstractions and loosely coupled code to make building application front-ends simpler. It avoids using vain effects, styles or images that do not contribute to the function of the application. The framework does not assume to know how it will be used. That complicated mumbo jumbo just to say flakes takes care of all the boring stuff so you can launch your project faster.</p>
+				</div>
+				<div class="span-1">
+					<h4>Built for the real world</h4>
+					<p>When designing flakes, I took the time to study plenty of real world internal applications. CRM software, Inventory Management, Website Admins, Transaction Management, etc. I wanted Flakes to be agnostic enough that any one of those applications could be built with it.</p>
+				</div>
+				<div class="span-1">
+					<h4>Component Architecture</h4>
+					<p>Flakes is a curated set of components that are most useful in building internal applications. This modular architecture allows you to swap out pieces of Flakes for more appropriate components. It also makes it very simple for contributors to add their own components.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="block about-flakes">
 		<div class="inner">
-			<div class="grid-3 gutter-40">
-				<div class="span-2">
-					<h1>About Flakes</h1>
-					<div class="grid-2 gutter-20">
-						<div class="span-1">
-							<p><b>Just think about how easy it has become to build a web application.</b> Think about all the frameworks and tools you have available to get started. When you&rsquo;re building for the web, someone has already done the hard work. Mostly, it is about finding the right parts and putting them together. However, this abundance of tools and frameworks is lacking when it comes to internal applications.</p>
-							<p><b>Flakes is a front-end framework that helps businesses build better internal software.</b> I very rarely come across internal applications that have been well designed and developed. Usually, time constraints and business priorities get in the way. The user experience is almost always an afterthought. Mobile readiness non-existent. And an aesthetic that is as old as the internet itself.</p>
-						</div>
-						<div class="span-1">
-							<p><b>Flakes is different.</b> Well designed from the ground up. An uncluttered interface that lets you get work done without jarring your sensibilities. Responsive so you can manage your business on the go. Built around a component architecture for easy development. And much more.</p>
+			<h1>About Flakes</h1>
+			<div class="grid-3 gutter-20">
+				<div class="span-1">
+					<p><b>Just think about how easy it has become to build a web application.</b> Think about all the frameworks and tools you have available to get started. When you&rsquo;re building for the web, someone has already done the hard work. Mostly, it is about finding the right parts and putting them together. However, this abundance of tools and frameworks is lacking when it comes to internal applications.</p>
+					<p><b>Flakes is a front-end framework that helps businesses build better internal software.</b> I very rarely come across internal applications that have been well designed and developed. Usually, time constraints and business priorities get in the way. The user experience is almost always an afterthought. Mobile readiness non-existent. And an aesthetic that is as old as the internet itself.</p>
+				</div>
+				<div class="span-1">
+					<p><b>Flakes is different.</b> Well designed from the ground up. An uncluttered interface that lets you get work done without jarring your sensibilities. Responsive so you can manage your business on the go. Built around a component architecture for easy development. And much more.</p>
 
-							<p><b>The Flakes aesthetic is sharp, uncluttered, task driven and not influenced by todays trends.</b> Thousands of hours are spent on internal applications which makes speed a priority. Flakes was designed to be weightless. It goes away with custom fonts, images or slow loading libraries. All you are left with is a blazingly fast framework.</p>
-						</div>
-					</div>
+					<p><b>The Flakes aesthetic is sharp, uncluttered, task driven and not influenced by todays trends.</b> Thousands of hours are spent on internal applications which makes speed a priority. Flakes was designed to be weightless. It goes away with custom fonts, images or slow loading libraries. All you are left with is a blazingly fast framework.</p>
 				</div>
 				<div class="span-1">
 					<img class="sketches" width="350px" src="{{ STATIC_URL }}/img/sketches.png">
@@ -52,39 +68,10 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="block design-and-research">
-		<div class="inner">
-			<h1>Framework Overview</h1>
-			<img class="devices" width="100%" src="{{ STATIC_URL }}/img/devices.png">
-			<div class="grid-4 gutter-20">
-				<div class="span-1">
-					<h5>Flakes is boring</h5>
-					<p>It is built on top of layers of abstractions and loosely coupled code to make building application front-ends simpler. It avoids using vain effects, styles or images that do not contribute to the function of the application. The framework does not assume to know how it will be used. That complicated mumbo jumbo just to say flakes takes care of all the boring stuff so you can launch your project faster.</p>
-				</div>
-				<div class="span-1">
-					<h5>Built for the real world</h5>
-					<p>When designing flakes, I took the time to study plenty of real world internal applications. CRM software, Inventory Management, Website Admins, Transaction Management, etc. I wanted Flakes to be agnostic enough that any one of those applications could be built with it.</p>
-				</div>
-				<div class="span-1">
-					<h5>Component Architecture</h5>
-					<p>Flakes is a curated set of components that are most useful in building internal applications. This modular architecture allows you to swap out pieces of Flakes for more appropriate components. It also makes it very simple for contributors to add their own components.</p>
-				</div>
-				<div class="span-1">
-					<div class="consultation">
-						<h5>Application Design Consultation Services</h5>
-						<p>For consultation sevices around application design, user flows &amp; front-end architecture, <a href="mailto:contact@kumailht.com">get in touch</a>.</p>
-						<p><a href="mailto:contact@kumailht.com">contact@kumailht.com</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 
 	<div class="block" id="seal-by-kumail">
 		<div class="inner">
-			<img class="sign" width="180px" src="{{ STATIC_URL }}/img/sign.png">
+			<img class="sign" width="160px" src="{{ STATIC_URL }}/img/sign.png">
 			<p>Designed & developed by <br><b><a href="http://kumailht.com">Kumail Hunaid</a></b></p>
 		</div>
 	</div>

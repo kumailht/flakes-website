@@ -39,7 +39,7 @@ a
 .intro
 	background: #CCCCCC
 	border-bottom: 2px solid #b3b3b3
-	padding: 50px 0
+	padding: 40px 0 30px
 	+breakpoints(0, $MOBILE)
 		padding: 40px 0
 	.inner
@@ -49,11 +49,11 @@ a
 			width: 100%
 			height: 1px
 			background: #e6e6e6
-			margin-top: 20px
+			margin-top: 15px
 		h1, h2, p
 			max-width: 600px
 		h1
-			+size(45)
+			+size(40)
 			letter-spacing: -2px
 			line-height: 1
 			margin-bottom: 0
@@ -70,10 +70,22 @@ a
 		p
 			+size(14)
 			margin-top: 0
+			margin-bottom: 30px
 			color: lighten($silver_blue, 10%)
 		a
 			+size(17)
 			font-weight: bold
+
+		.cta
+			background: white
+			border-bottom: 1px solid darken(#e6e6e6, 20%)
+			border-radius: 2px
+			padding: 10px 20px
+			display: inline-block
+			+breakpoints(0, $SITE_WIDTH)
+				padding: 5px 10px
+			&:hover
+				background: #FFF300
 
 		.twitter-share-button, .github-star-button
 			position: relative
@@ -88,35 +100,27 @@ a
 			+breakpoints(0, $SITE_WIDTH)
 				display: none
 
-
-.about-flakes, .design-and-research
-	h1
-		+size(45)
-		letter-spacing: -2px
-		word-spacing: -2px
-		margin-top: 70px
-		margin-bottom: 0
-		+breakpoints(0, $MOBILE)
-			+size(28)
-			letter-spacing: -1px
-
-.about-flakes
-	.sketches
-		margin-top: 100px
-
 .design-and-research
-	p
-		+size(14)
 	.consultation
 		border: 2px solid darken(#ff0, 2%)
 		background: lighten(#ff0, 40%)
 		padding: 15px
 		margin-top: 20px
-		h5
+		h4
 			margin-top: 0
 		p
 			margin-bottom: 0
-			+size(13)
+
+.about-flakes, .design-and-research
+	h1
+		+size(35)
+		letter-spacing: -1px
+		word-spacing: -1px
+		margin-top: 40px
+		margin-bottom: 0
+		+breakpoints(0, $MOBILE)
+			+size(28)
+			letter-spacing: -1px
 
 #seal-by-kumail
 	margin: 50px 0 100px
