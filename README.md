@@ -21,3 +21,6 @@ sudo easy_install cactus
 
 4. Run the Cactus server
 cactus serve
+
+4. Build the website (outputs a website in the .build directory)
+cactus build
