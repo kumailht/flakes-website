@@ -11,9 +11,11 @@ Homepage & Documentation to the [Flakes admin framework](https://github.com/kuma
 bower install```
 
 #### Run SASS (if you're making changes to the CSS)
-```cd static/css
+```
+cd static/css
 sass --watch website.sass:website.css --style compressed
-sass --watch preview.sass:preview.css --style compressed```
+sass --watch preview.sass:preview.css --style compressed
+```
 
 #### Install Cactus (https://github.com/koenbok/Cactus)
 `sudo easy_install cactus`
