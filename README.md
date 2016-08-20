@@ -5,23 +5,28 @@ Homepage & Documentation to the [Flakes admin framework](https://github.com/kuma
 
 1. Clone the repository and all submodules
 
-  `git clone --recursive https://github.com/kumailht/flakes-website.git`
+`git clone --recursive https://github.com/kumailht/flakes-website.git`
 
 2. Install dependencies
-cd static
-bower install
+
+```cd static
+bower install```
 
 3. Run SASS (if you're making changes to the CSS)
-cd static/css
+
+```cd static/css
 sass --watch website.sass:website.css --style compressed
-sass --watch preview.sass:preview.css --style compressed
+sass --watch preview.sass:preview.css --style compressed```
 
 
 3. Install Cactus (https://github.com/koenbok/Cactus)
-sudo easy_install cactus
+
+`sudo easy_install cactus`
 
 4. Run the Cactus server
-cactus serve
+
+`cactus serve`
 
 4. Build the website (outputs a website in the .build directory)
-cactus build
+
+`cactus build`
