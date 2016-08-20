@@ -1,7 +1,7 @@
 # Flakes Homepage & Documentation
 Homepage & Documentation to the [Flakes admin framework](https://github.com/kumailht/flakes/). Uses the [Cactus](https://github.com/koenbok/Cactus) static site generator. 
 
-## How to run the Flakes Website & Documentation locally
+## Setup instructions
 
 #### Clone the repository and all submodules
 `git clone --recursive https://github.com/kumailht/flakes-website.git`
